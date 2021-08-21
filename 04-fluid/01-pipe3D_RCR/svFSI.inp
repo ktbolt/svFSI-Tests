@@ -59,8 +59,8 @@ Add equation: fluid {
       Max iterations:      10
       NS-GM max iterations: 3
       NS-CG max iterations: 500
-      Tolerance:           1D-3
-      NS-GM tolerance:     1D-3
+      Tolerance:           1e-3
+      NS-GM tolerance:     1e-3
       NS-CG tolerance:     1D-3
       Krylov space dimension: 50
    }
