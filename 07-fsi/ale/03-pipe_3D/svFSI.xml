@@ -55,7 +55,7 @@
    <Project_from_face> lumen_wall </Project_from_face>
 </Add_projection> 
 
-<Add_equation name="FSI" > 
+<Add_equation type="FSI" > 
    <Coupled> true </Coupled>
    <Min_iterations> 3 </Min_iterations>  
    <Max_iterations> 10 </Max_iterations> 
@@ -119,7 +119,7 @@
 </Add_equation>
 
 
-<Add_equation name="mesh" >
+<Add_equation type="mesh" >
    <Coupled> true </Coupled>
    <Min_iterations> 1 </Min_iterations>
    <Max_iterations> 5 </Max_iterations>

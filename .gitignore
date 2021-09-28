@@ -1,2 +1,5 @@
 my-run/
 *-procs
+*.exe
+obj
+*.ini
