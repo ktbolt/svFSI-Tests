@@ -8,12 +8,15 @@
   <Time_step_size> 0.005 </Time_step_size> 
   <Spectral_radius_of_infinite_time_step> 0.50 </Spectral_radius_of_infinite_time_step> 
   <Searched_file_name_to_trigger_stop> STOP_SIM </Searched_file_name_to_trigger_stop> 
+
   <Save_results_to_VTK_format> 1 </Save_results_to_VTK_format> 
   <Name_prefix_of_saved_VTK_files> result </Name_prefix_of_saved_VTK_files> 
   <Increment_in_saving_VTK_files> 10 </Increment_in_saving_VTK_files> 
   <Start_saving_after_time_step> 600 </Start_saving_after_time_step> 
+
   <Increment_in_saving_restart_files> 200 </Increment_in_saving_restart_files> 
   <Convert_BIN_to_VTK_format> 0 </Convert_BIN_to_VTK_format> 
+
   <Verbose> 1 </Verbose> 
   <Warning> 0 </Warning> 
   <Debug> 0 </Debug> 
@@ -21,21 +24,24 @@
 
 
 <Add_mesh name="msh" > 
+
   <Mesh_file_path> ../mesh-complete/mesh-complete.mesh.vtu </Mesh_file_path>
+
+  <Add_face name="lumen_inlet">
+      <Face_file_path> ../mesh-complete/mesh-surfaces/lumen_inlet.vtp </Face_file_path>
+  </Add_face>
+
   <Add_face name="lumen_outlet">
       <Face_file_path> ../mesh-complete/mesh-surfaces/lumen_outlet.vtp </Face_file_path>
   </Add_face>
+
   <Add_face name="lumen_wall">
       <Face_file_path> ../mesh-complete/mesh-surfaces/lumen_wall.vtp </Face_file_path>
   </Add_face>
+
 </Add_mesh>
 
 <Add_equation type="fluid" > 
-   <Density> 1.06 </Density> 
-
-   <Viscosity model="Constant" >
-     <Value> 0.04 </Value>
-   </Viscosity>
 
    <Coupled> true </Coupled>
    <Min_iterations> 3 </Min_iterations>  
@@ -43,6 +49,14 @@
    <Tolerance> 1e-3 </Tolerance> 
    <Backflow_stabilization_coefficient> 0.2 </Backflow_stabilization_coefficient> 
 
+   <Density> 1.06 </Density> 
+
+   <Viscosity model="Cassons" >
+      <Asymptotic_viscosity_parameter> 0.3953 </Asymptotic_viscosity_parameter> 
+      <Yield_stress_parameter> 0.22803 </Yield_stress_parameter> 
+      <Low_shear_rate_threshold> 0.5 </Low_shear_rate_threshold> 
+   </Viscosity>
+      
    <Output type="Spatial" >
      <Velocity> true </Velocity>
      <Pressure> true </Pressure>
@@ -67,6 +81,17 @@
       <Profile> Parabolic </Profile> 
       <Impose_flux> true </Impose_flux> 
    </Add_BC> 
+
+   <Add_BC name="lumen_outlet" >
+      <Type> Neu </Type>
+      <Value> 0.0 </Value>
+   </Add_BC>
+
+   <Add_BC name="lumen_wall" >
+      <Type> Dir </Type>
+      <Time_dependence> Steady </Time_dependence> 
+      <Value> 0.0 </Value>
+   </Add_BC>
 
 </Add_equation>
 

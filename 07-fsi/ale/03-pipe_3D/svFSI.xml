@@ -72,7 +72,7 @@
    
    <Domain id="1" >
        <Equation> struct </Equation> 
-       <Constitutive_model type="NeoHookean"> </Constitutive_model> 
+       <Constitutive_model type="neoHookean"> </Constitutive_model> 
        <Dilational_penalty_model> M94 </Dilational_penalty_model> 
        <Density> 1.0 </Density> 
        <Elasticity_modulus> 1.0e7 </Elasticity_modulus> 
