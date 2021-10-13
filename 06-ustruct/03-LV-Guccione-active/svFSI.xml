@@ -36,7 +36,7 @@
 
 </Add_mesh>
 
-<Add_equation name="ustruct" > 
+<Add_equation type="ustruct" > 
    <Coupled> true </Coupled>
    <Min_iterations> 3 </Min_iterations>  
    <Max_iterations> 10 </Max_iterations> 
@@ -54,7 +54,7 @@
     </Constitutive_model> 
 
    <Fiber_reinforcement_stress type="Unsteady" > 
-      <Temporal_values_file_path> fib_stress.dat </Temporal_values_file_path> 
+      <Temporal_values_file_path> ../fib_stress.dat </Temporal_values_file_path> 
       <Ramp_function> true </Ramp_function> 
    </Fiber_reinforcement_stress> 
 
