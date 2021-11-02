@@ -49,11 +49,11 @@
       <Tolerance> 1e-6 </Tolerance>
    </LS>
 
-   <Add_BC name="wall" > 
+   <Add_BF name="wall" > 
       <Type> Trac </Type> 
       <Time_dependence> Spatial </Time_dependence> 
       <Spatial_values_file_path> rigid_wall_mean_traction.vtp </Spatial_values_file_path> 
-   </Add_BC> 
+   </Add_BF> 
 
 </Add_equation>
 
