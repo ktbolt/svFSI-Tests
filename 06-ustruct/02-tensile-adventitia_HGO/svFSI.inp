@@ -83,7 +83,8 @@ Add equation: ustruct {
 
    LS type: GMRES
    {
-      Preconditioner:      Trilinos-ILUT
+      Preconditioner:      FSILS
+      #Preconditioner:      Trilinos-ILUT
       Tolerance:           1D-6
       Max iterations:      100
       Krylov space dimension: 50

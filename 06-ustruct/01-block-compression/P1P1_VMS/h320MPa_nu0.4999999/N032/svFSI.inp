@@ -24,24 +24,31 @@ Debug: 0
 # Mesh data
 Add mesh: msh {
    Mesh file path:    ../../mesh/N032/mesh-complete.mesh.vtu
+
    Add face: X0 {
       Face file path: ../../mesh/N032/mesh-surfaces/X0.vtp
    }
+
    Add face: X1 {
       Face file path: ../../mesh/N032/mesh-surfaces/X1.vtp
    }
+
    Add face: Y0 {
       Face file path: ../../mesh/N032/mesh-surfaces/Y0.vtp
    }
+
    Add face: Y1 {
       Face file path: ../../mesh/N032/mesh-surfaces/Y1.vtp
    }
+
    Add face: Z0 {
       Face file path: ../../mesh/N032/mesh-surfaces/Z0.vtp
    }
+
    Add face: Z1 {
       Face file path: ../../mesh/N032/mesh-surfaces/Z1.vtp
    }
+
    Add face: patch {
       Face file path: ../../mesh/N032/mesh-surfaces/Z1_patch.vtp
    }
@@ -83,7 +90,7 @@ Add equation: ustruct {
 
    LS type: GMRES
    {
-      Preconditioner:      Trilinos-ILU
+      #Preconditioner:      Trilinos-ILU
       Tolerance:           1D-8
       Max iterations:      100
       Krylov space dimension: 50

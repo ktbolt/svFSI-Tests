@@ -24,27 +24,35 @@ Debug: 0
 # Mesh data
 Add mesh: msh {
    Mesh file path:    mesh/P1/N032/mesh-complete.mesh.vtu
+
    Add face: X0 {
       Face file path: mesh/P1/N032/mesh-surfaces/X0.vtp
    }
+
    Add face: X1 {
       Face file path: mesh/P1/N032/mesh-surfaces/X1.vtp
    }
+
    Add face: Y0 {
       Face file path: mesh/P1/N032/mesh-surfaces/Y0.vtp
    }
+
    Add face: Y1 {
       Face file path: mesh/P1/N032/mesh-surfaces/Y1.vtp
    }
+
    Add face: Z0 {
       Face file path: mesh/P1/N032/mesh-surfaces/Z0.vtp
    }
+
    Add face: Z1 {
       Face file path: mesh/P1/N032/mesh-surfaces/Z1.vtp
    }
+
    Add face: patch {
       Face file path: mesh/P1/N032/mesh-surfaces/Z1_patch.vtp
    }
+
    Mesh scale factor: 0.001
 }
 

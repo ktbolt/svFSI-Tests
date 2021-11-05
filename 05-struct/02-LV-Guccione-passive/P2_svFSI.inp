@@ -24,15 +24,19 @@ Debug: 0
 # Mesh data
 Add mesh: msh {
    Mesh file path:    mesh/P2/mesh-complete.mesh.vtu
+
    Add face: endo {
       Face file path: mesh/P2/mesh-surfaces/endo.vtp
    }
+
    Add face: epi {
       Face file path: mesh/P2/mesh-surfaces/epi.vtp
    }
+
    Add face: base {
       Face file path: mesh/P2/mesh-surfaces/base.vtp
    }
+
    Fiber direction: (1.0, 0.0, 0.0)
    Fiber direction: (0.0, 1.0, 0.0)
 }

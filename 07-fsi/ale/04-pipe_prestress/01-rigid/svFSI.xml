@@ -79,8 +79,8 @@
       <Type> Neu </Type>
       <Time_dependence> RCR </Time_dependence> 
       <RCR_values> 
-         <Capacitance> 121.0 </Capacitance> 
-         <Distal_pressure> 1.5e-5 </Distal_pressure> 
+         <Proximal_resistance> 121.0 </Proximal_resistance> 
+         <Capacitance> 1.5e-5 </Capacitance> 
          <Distal_resistance> 1212.0 </Distal_resistance>
       </RCR_values> 
       <Distal_pressure> 0.0 </Distal_pressure> 

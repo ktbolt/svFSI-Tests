@@ -23,42 +23,57 @@ Debug: 0
 #----------------------------------------------------------------
 # Mesh data
 Add mesh: lumen {
+
    Mesh file path: mesh/channel/mesh-complete.mesh.vtu
+
    Add face: inlet {
       Face file path: mesh/channel/mesh-surfaces/inlet.vtp
    }
+
    Add face: outlet {
       Face file path: mesh/channel/mesh-surfaces/outlet.vtp
    }
+
    Add face: top_wall {
       Face file path: mesh/channel/mesh-surfaces/top_wall.vtp
    }
+
    Add face: bottom_wall {
       Face file path: mesh/channel/mesh-surfaces/bottom_wall.vtp
    }
+
    Add face: top_leaflet {
       Face file path: mesh/channel/mesh-surfaces/top_leaflet.vtp
    }
+
    Add face: bottom_leaflet {
       Face file path: mesh/channel/mesh-surfaces/bottom_leaflet.vtp
    }
+
    Domain: 0
 }
 
+
 Add mesh: leaflets {
+
    Mesh file path: mesh/leaflets/mesh-complete.mesh.vtu
+
    Add face: top_leaflet_wall {
       Face file path: mesh/leaflets/mesh-surfaces/top_leaflet_wall.vtp
    }
+
    Add face: bottom_leaflet_wall {
       Face file path: mesh/leaflets/mesh-surfaces/bottom_leaflet_wall.vtp
    }
+
    Add face: top_leaflet_int {
       Face file path: mesh/leaflets/mesh-surfaces/top_leaflet_int.vtp
    }
+
    Add face: bottom_leaflet_int {
       Face file path: mesh/leaflets/mesh-surfaces/bottom_leaflet_int.vtp
    }
+
    Domain: 1
 }
 
@@ -99,7 +114,7 @@ Add equation: FSI {
    }
 
    LS type: GMRES {
-      Preconditioner: Trilinos-ILUT
+      #Preconditioner: Trilinos-ILUT
       Tolerance: 1e-6
       Max iterations: 100
       Krylov space dimension: 50

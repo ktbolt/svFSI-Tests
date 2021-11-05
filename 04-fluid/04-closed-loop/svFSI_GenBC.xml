@@ -25,99 +25,99 @@
 
 <Add_mesh name="msh" > 
 
-  <Mesh_file_path> ../mesh/mesh-complete.mesh.vtu  </Mesh_file_path>
+  <Mesh_file_path> ./mesh/mesh-complete.mesh.vtu  </Mesh_file_path>
 
   <Add_face name="inlet">
-      <Face_file_path> ../mesh/mesh-surfaces/inlet.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/inlet.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_1">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_1.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_1.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_2">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_2.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_2.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_3">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_3.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_3.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_4">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_4.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_4.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_5">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_5.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_5.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_6">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_6.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_6.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_7">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_7.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_7.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_8">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_8.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_8.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_9">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_9.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_9.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_10">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_10.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_10.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_11">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_11.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_11.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_12">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_12.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_12.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_13">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_13.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_13.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_14">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_14.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_14.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_15">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_15.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_15.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_16">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_16.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_16.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_17">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_17.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_17.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_18">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_18.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_18.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_19">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_19.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_19.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="outlet_20">
-      <Face_file_path> ../mesh/mesh-surfaces/outlet_20.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/outlet_20.vtp </Face_file_path>
   </Add_face>
 
   <Add_face name="wall">
-      <Face_file_path> ../mesh/mesh-surfaces/wall.vtp </Face_file_path>
+      <Face_file_path> ./mesh/mesh-surfaces/wall.vtp </Face_file_path>
   </Add_face>
 
 </Add_mesh>
 
-<Add_equation name="fluid" > 
+<Add_equation type="fluid" > 
    <Coupled> true </Coupled>
    <Min_iterations> 3 </Min_iterations>  
    <Max_iterations> 10 </Max_iterations> 
@@ -150,7 +150,7 @@
    </LS>
 
    <Couple_to_genBC type="SI" >
-      <ZeroD_code_file_path> ../genBC/genBC.exe </ZeroD_code_file_path> 
+      <ZeroD_code_file_path> ./genBC/genBC.exe </ZeroD_code_file_path> 
    </Couple_to_genBC> 
 
    <Add_BC name="outlet_1" > 

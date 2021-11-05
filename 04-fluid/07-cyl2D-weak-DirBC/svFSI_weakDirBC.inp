@@ -26,18 +26,23 @@ Debug: 0
 # Mesh data
 Add mesh: msh {
    Mesh file path:    mesh/mesh-complete.mesh.vtu
+
    Add face: inlet {
       Face file path: mesh/mesh-surfaces/inlet.vtp
    }
+
    Add face: outlet {
       Face file path: mesh/mesh-surfaces/outlet.vtp
    }
+
    Add face: top {
       Face file path: mesh/mesh-surfaces/top.vtp
    }
+
    Add face: bottom {
       Face file path: mesh/mesh-surfaces/bottom.vtp
    }
+
    Add face: cyl_wall {
       Face file path: mesh/mesh-surfaces/wall.vtp
    }

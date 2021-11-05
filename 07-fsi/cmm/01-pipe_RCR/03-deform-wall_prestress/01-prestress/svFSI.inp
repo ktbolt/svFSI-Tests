@@ -47,7 +47,7 @@ Add equation: CMM {
 
    LS type: BICG
    {
-      Preconditioner: Trilinos-ILUT
+      #Preconditioner: Trilinos-ILUT
       Max iterations:      500
       Tolerance:           1D-6
    }

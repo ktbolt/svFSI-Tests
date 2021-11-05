@@ -1,0 +1,64 @@
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 11-04-2021
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 10000
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Constructing stiffness matrix sparse structure
+ Total number of non-zeros in the LHS matrix: 366009
+ Initializing state variables to zero
+ Eq. <NS>
+    Volume of domain <-1> is 2.9921E2
+    Area of face <inlet> is 1.0000E1
+    Area of face <outlet> is 1.0000E1
+    Area of face <top> is 3.0000E1
+    Area of face <bottom> is 3.0000E1
+    Area of face <cyl_wall> is 3.141461
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ New time step size: 1.000E-2
