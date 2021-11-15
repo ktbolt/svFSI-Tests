@@ -64,7 +64,7 @@ Add equation: lElas {
 
    LS type: GMRES
    {
-      Preconditioner:      Trilinos-ILUT
+      #Preconditioner:      Trilinos-ILUT
       Tolerance:           1D-3
       Max iterations:      100
       Krylov space dimension: 50

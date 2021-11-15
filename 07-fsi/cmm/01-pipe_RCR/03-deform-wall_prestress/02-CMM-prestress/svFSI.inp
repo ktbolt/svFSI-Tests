@@ -1,7 +1,8 @@
 #----------------------------------------------------------------
 # General simulation parameters
 
-Continue previous simulation: 1
+#Continue previous simulation: 1
+Continue previous simulation: 0
 Number of spatial dimensions: 3
 Number of time steps: 800
 Time step size: 0.005

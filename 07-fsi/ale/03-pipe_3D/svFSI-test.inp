@@ -24,18 +24,21 @@ Debug: 0
 # Mesh data
 Add mesh: lumen {
 
-   Mesh file path: mesh/lumen/mesh-complete.mesh.vtu
+   Mesh file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-mesh.vtu
 
    Add face: lumen_inlet {
-      Face file path: mesh/lumen/mesh-surfaces/lumen_inlet.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-inflow.vtp
+      #Face file path: mesh/lumen/mesh-surfaces/lumen_inlet.vtp
    }
 
    Add face: lumen_outlet {
-      Face file path: mesh/lumen/mesh-surfaces/lumen_outlet.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-outlet.vtp 
+      #Face file path: mesh/lumen/mesh-surfaces/lumen_outlet.vtp
    }
 
    Add face: lumen_wall {
-      Face file path: mesh/lumen/mesh-surfaces/lumen_wall.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-wall.vtp 
+      #Face file path: mesh/lumen/mesh-surfaces/lumen_wall.vtp
    }
 
    Domain: 0
@@ -43,22 +46,27 @@ Add mesh: lumen {
 
 Add mesh: wall {
 
-   Mesh file path: mesh/wall/mesh-complete.mesh.vtu
+   Mesh file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-mesh.vtu 
+   #Mesh file path: mesh/wall/mesh-complete.mesh.vtu
 
    Add face: wall_inlet {
-      Face file path: mesh/wall/mesh-surfaces/wall_inlet.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-inflow.vtp
+      #Face file path: mesh/wall/mesh-surfaces/wall_inlet.vtp
    }
 
    Add face: wall_outlet {
-      Face file path: mesh/wall/mesh-surfaces/wall_outlet.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-outlet.vtp
+      #Face file path: mesh/wall/mesh-surfaces/wall_outlet.vtp
    }
 
    Add face: wall_inner {
-      Face file path: mesh/wall/mesh-surfaces/wall_inner.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-wall-inner.vtp
+      #Face file path: mesh/wall/mesh-surfaces/wall_inner.vtp
    }
 
    Add face: wall_outer {
-      Face file path: mesh/wall/mesh-surfaces/wall_outer.vtp
+      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-wall-outer.vtp
+      #Face file path: mesh/wall/mesh-surfaces/wall_outer.vtp
    }
 
    Domain: 1

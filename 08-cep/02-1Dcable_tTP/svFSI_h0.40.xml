@@ -24,8 +24,8 @@
 
 <Add_mesh name="msh" > 
   <Set_mesh_as_fibers> true </Set_mesh_as_fibers> 
-  <Mesh_file_path> mesh/h0.20/bar_h0.20.vtu  </Mesh_file_path>
-  <Domain_file_path> mesh/h0.20/domain_info_h0.20.dat </Domain_file_path> 
+  <Mesh_file_path> mesh/h0.40/bar_h0.40.vtu  </Mesh_file_path>
+  <Domain_file_path> mesh/h0.40/domain_info_h0.40.dat </Domain_file_path> 
 </Add_mesh>
 
 <Add_equation type="CEP" > 
