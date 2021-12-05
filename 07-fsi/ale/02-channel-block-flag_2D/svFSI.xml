@@ -177,6 +177,11 @@
      <Displacement> true </Displacement>
    </Output>
 
+   <Add_BC name="inlet" > 
+      <Type> Dir </Type> 
+      <Value> 0.0 </Value> 
+   </Add_BC> 
+
    <Add_BC name="outlet" > 
       <Type> Dir </Type> 
       <Value> 0.0 </Value> 
