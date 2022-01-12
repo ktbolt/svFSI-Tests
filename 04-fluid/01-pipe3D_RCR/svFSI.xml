@@ -70,6 +70,17 @@
       <Impose_flux> true </Impose_flux> 
    </Add_BC> 
 
+   <Add_BC name="lumen_outlet" > 
+      <Type> Neu </Type> 
+      <Value> 0.0 </Value>
+   </Add_BC> 
+
+   <Add_BC name="lumen_wall" > 
+      <Type> Dir </Type> 
+      <Time_dependence> Steady </Time_dependence> 
+      <Value> 0.0 </Value>
+   </Add_BC> 
+
 </Add_equation>
 
 </svFSIFile>
