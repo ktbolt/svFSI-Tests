@@ -11,7 +11,8 @@
 
   <Save_results_to_VTK_format> 1 </Save_results_to_VTK_format> 
   <Name_prefix_of_saved_VTK_files> result </Name_prefix_of_saved_VTK_files> 
-  <Increment_in_saving_VTK_files> 100 </Increment_in_saving_VTK_files> 
+  <Increment_in_saving_VTK_files> 1 </Increment_in_saving_VTK_files> 
+  <!--Increment_in_saving_VTK_files> 10 </Increment_in_saving_VTK_files!--> 
   <Start_saving_after_time_step> 1 </Start_saving_after_time_step> 
 
   <Increment_in_saving_restart_files> 100 </Increment_in_saving_restart_files> 
@@ -70,7 +71,7 @@
 
    <Constitutive_model type="nHK"> </Constitutive_model>
    <Density> 1000.0 </Density> 
-   <Elasticity_modulus> 1240.56596e6 </Elasticity_modulus>
+   <Elasticity_modulus> 240.56596E6 </Elasticity_modulus>
    <Poisson_ratio> 0.5 </Poisson_ratio>
 
    <Dilational_penalty_model> ST91 </Dilational_penalty_model>
