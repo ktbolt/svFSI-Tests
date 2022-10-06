@@ -1,0 +1,3925 @@
+ [MAIN:[32m0[0m]             
+ [MAIN:[32m0[0m]              ========== MAIN ==========
+ [MAIN:[32m0[0m]             
+ [MAIN:[32m0[0m]              ========== MAIN ==========
+ [NEWCM] 
+ [NEWCM] ========== NEWCM ==========
+ [NEWCM] cm%taskId:            0
+ [NEWCM] cm%nProcs:            2
+ [MAIN] tid:            0
+
+========== create_simulation (cpp) ==========
+ [NEWCM] 
+ [NEWCM] ========== NEWCM ==========
+[cmType] 
+[cmType] + + + + +   cmType ctor + + + + + 
++ + + + + ComMod ctor  + + + + + 
+ [NEWCM] cm%taskId:            1
+ [NEWCM] cm%nProcs:            2
+ [MAIN] tid:            1
+
++ + + + +  Simulation ctor + + + + + 
+[new_cm] 
+[new_cm] ==========  cmType::new_cm ==========
+[new_cm] nProcs: 2
+[new_cm] taskId: 0
+ [MAIN] Len input file name:            9
+ [MAIN] Input XML file name: svFSI.xml                       
+ [MAIN] iargc():            1
+========== create_simulation (cpp) ==========
+ [MAIN] timeP:   -4.5635526432458293E-085  -2.0241625410094595E-038   1.8972755563450518E-208
+[read_files]
+[read_files] ========== read_files (cpp) ==========
+[read_files] file_name: svFSI.xml
+[read_files] 
+[read_files] ========== read_files ==========
+[cmType] 
+[cmType] + + + + +   cmType ctor + + + + + 
++ + + + + ComMod ctor  + + + + + 
+[Parameters::read_parameters] file_name: svFSI.xml
++ + + + +  Simulation ctor + + + + + 
+[new_cm] 
+[new_cm] ==========  cmType::new_cm ==========
+[new_cm] nProcs: 2
+[new_cm] taskId: 1
+ [MAIN] Len input file name:            9
+ [MAIN] Input XML file name: svFSI.xml                       
+ [MAIN] iargc():            1
+ [MAIN] timeP:   -1.1379679963438218E+083  -7.1348569577352415E-172  -1.5032677476714802E+236
+[read_files]
+[read_files] ========== read_files (cpp) ==========
+[read_files] file_name: svFSI.xml
+[read_files] slave process, just return
+
+========== distribute_data (cpp) ==========
+[distribute:1] 
+[distribute:1] ========== distribute ==========
+[distribute:1]  com_mod.resetSim: 0
+Parsing Domain element ...
+[DomainParameters::set_parameters] Parse anisotropic conductivity values ...
+Parsing Domain element ...
+Parsing Stimulus element ...
+[DomainParameters::set_parameters] Parse anisotropic conductivity values ...
+[~EquationParameters] 
+[~EquationParameters] - - - - -  ~EquationParameters dtor  - - - - -
+[read_files] com_mod.saveName: ''
+[read_files] chnl_mod.appPath: '2-procs/'
+[read_files] com_mod.stFileFlag: 0
+[read_files] Running in parallel with 2 tasks.
+[read_files] Number of processors: 2
+========== Simulation::set_parameters ==========
+[set_parameters] nsd: 2
+[set_parameters] startTS: 0
+[set_parameters] dt: 1.0000000000000000e+00
+[set_parameters] nITs: 0
+[set_parameters] stopTrigName: STOP_SIM
+[set_parameters] saveVTK: 1
+[set_parameters] saveName: 2-procs/result
+[set_parameters] saveIncr: 1
+[set_parameters] saveATS: 1
+[set_parameters] saveAve: 0
+[set_parameters] zeroAve: 0
+[set_parameters] stFileRepl: 0
+[set_parameters] nTs: 10
+[set_parameters] fTmp: 
+[set_parameters] roInf: 5.0000000000000000e-01
+[set_parameters] isReqd_: 0
+[read_files] read_msh_ns::read_msh ... 
+[read_msh:0] 
+[read_msh:0] ========== read_msh ==========
++ + + + +  mshType ctor + + + + + 
+[read_msh:0] Number of meshes: 1
+[read_msh:0] 
+[read_msh:0] Mesh name: msh
+[read_msh:0]   scale factor: 1.0000000000000000e+00
+[read_vtu] 
+[read_vtu] ========== vtk_xml::read_vtu ==========
+[read_vtu] Mesh name: 'msh'
+[read_vtu] Mesh file name: 'mesh/h0.25/mesh-complete.mesh.vtu'
+[load_vtu] 
+[load_vtu] ===== vtk_xml_parser::load_vtu ===== 
+[load_vtu] file_name: mesh/h0.25/mesh-complete.mesh.vtu
+[load_vtu] Number of nodes: 160801
+[load_vtu] Number of elements: 160000
+[store_nodal_coords] Allocate mesh.x ... 
+[store_element_conn(ugrid)] 
+[store_element_conn(ugrid)] ========== store_element_conn(ugrid) =========
+[store_element_conn(ugrid)] num_elems: 160000
+[store_element_conn] num_line: 0
+[store_element_conn] num_quad: 160000
+[store_element_conn] num_tet: 0
+[store_element_conn] num_tri: 0
+[store_element_conn] num_unknown: 0
+[store_element_conn] np_elem: 4
+[store_element_conn] Allocate mesh.gIEN ... 
+[store_element_conn]   Number of elements: 160000
+[store_element_conn]   Number of nodes per element: 4
+[read_vtu] Done. 
+[select_ele] 
+[select_ele] ========== nn::select_ele ==========
+[select_ele] Mesh name: 'msh'
+[select_ele]      eNoN: 4
+[select_ele] mesh.lShl: 0
+[select_ele] com_mod.nsd: 2
+[select_ele] insd: 2
+[select_ele] mesh.eType: 106
+[select_ele] mesh.nG: 4
+[read_sv] Number of faces: 4
+[read_sv] Mesh nFa: 4
+[read_sv] Face name: bottom
+[read_vtp] 
+[read_vtp] ========== vtk_xml::read_vtp ==========
+[read_vtp] Face name: 'bottom'
+[read_vtp] Face file name: 'mesh/h0.25/mesh-surfaces/bottom.vtp'
+[load_vtp] 
+[load_vtp] ===== vtk_xml_parser.cpp::load_vtp ===== 
+[load_vtp] Number of nodes: 401
+[load_vtp] Number of elements: 400
+[store_nodal_ids] Allocate face.gN ... 
+[store_element_ids] Allocate face.gE ... 
+[load_vtp] Done. 
+[read_sv] Face name: top
+[read_vtp] 
+[read_vtp] ========== vtk_xml::read_vtp ==========
+[read_vtp] Face name: 'top'
+[read_vtp] Face file name: 'mesh/h0.25/mesh-surfaces/top.vtp'
+[load_vtp] 
+[load_vtp] ===== vtk_xml_parser.cpp::load_vtp ===== 
+[load_vtp] Number of nodes: 401
+[load_vtp] Number of elements: 400
+[store_nodal_ids] Allocate face.gN ... 
+[store_element_ids] Allocate face.gE ... 
+[load_vtp] Done. 
+[read_sv] Face name: left
+[read_vtp] 
+[read_vtp] ========== vtk_xml::read_vtp ==========
+[read_vtp] Face name: 'left'
+[read_vtp] Face file name: 'mesh/h0.25/mesh-surfaces/left.vtp'
+[load_vtp] 
+[load_vtp] ===== vtk_xml_parser.cpp::load_vtp ===== 
+[load_vtp] Number of nodes: 401
+[load_vtp] Number of elements: 400
+[store_nodal_ids] Allocate face.gN ... 
+[store_element_ids] Allocate face.gE ... 
+[load_vtp] Done. 
+[read_sv] Face name: right
+[read_vtp] 
+[read_vtp] ========== vtk_xml::read_vtp ==========
+[read_vtp] Face name: 'right'
+[read_vtp] Face file name: 'mesh/h0.25/mesh-surfaces/right.vtp'
+[load_vtp] 
+[load_vtp] ===== vtk_xml_parser.cpp::load_vtp ===== 
+[load_vtp] Number of nodes: 401
+[load_vtp] Number of elements: 400
+[store_nodal_ids] Allocate face.gN ... 
+[store_element_ids] Allocate face.gE ... 
+[load_vtp] Done. 
+[read_msh:0] mesh.gnNo: 160801
+[read_msh:0] Check for unique face names ....
+[read_msh:0] Global total number of nodes (gtnNo): 160801
+[read_msh:0] ----- Global nodes (gX) ----- 
+[read_msh:0] n: 0 1.0000000000000000e+02 1.0000000000000000e+02 
+[read_msh:0] n: 1 0.0000000000000000e+00 1.0000000000000000e+02 
+[read_msh:0] n: 2 9.9750000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 3 9.9500000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 4 9.9250000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 5 9.9000000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 6 9.8750000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 7 9.8500000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 8 9.8250000000000000e+01 1.0000000000000000e+02 
+[read_msh:0] n: 9 9.8000000000000000e+01 1.0000000000000000e+02 
+[set_projector] ========== read_mesh_ns::set_projector ==========
+[set_projector] nPrj: 0
+[set_projector] Calculate an upper limit for the number required stacks ...
+[set_projector] nStk: 0
+[set_projector] Match the nodal coordinates for each projection face ...
+[Array assignment] 
+[Array assignment] = = = = = Array assignment = = = = = [x]
+[read_msh:0] 
+[read_msh:0] com_mod.gtnNo: 160801
+[read_msh:0] 
+[read_msh:0] Temporarily allocate msh%lN array ... 
+[read_msh:0] 
+[read_msh:0] Re-arranging x ...
+[read_msh:0] minX: 0.0000000000000000e+00, 0.0000000000000000e+00, 1.7976931348623157e+308
+[read_msh:0] maxX: 1.0000000000000000e+02, 1.0000000000000000e+02, -1.7976931348623157e+308
+[read_msh:0] 
+[read_msh:0] Rearrange fa ... 
+[read_msh:0] 
+[read_msh:0] Setting dmnId parameter ... 
+[read_msh:0] 
+[read_msh:0]  ----- iM 0 -----
+[read_msh:0] Domain file path exists.
+[read_msh:0] domain_file_path: mesh/h0.25/domain_info.dat
+[read_msh]  flag: 1
+[read_msh]  
+[read_msh]  set dmnId ...
+[read_msh]  
+[read_msh] Read fiber orientation ...
+[read_msh] flag: 0
+[read_msh]  
+[read_msh]  
+[read_msh] Read prestress data ... 
+[read_msh] flag: 0
+[read_msh] 
+[read_msh] Load any initial data ...
+[load_var_ini] 
+[load_var_ini] ========== read_msh::load_var_ini ==========
+[load_var_ini] 
+[load_var_ini] Initialize pressure field from file ...
+[load_var_ini] 
+[load_var_ini] Initialize velocity field from file ...
+[load_var_ini] 
+[load_var_ini] Initialize displacements field from file ...
+[read_msh] Domain extent: 160801
+[read_msh] X: 0.0000000000000000e+00  1.0000000000000000e+02
+[read_msh] Y: 0.0000000000000000e+00  1.0000000000000000e+02
+[read_msh] 
+[read_msh] Read contact model parameters ...
+[read_files] ... done read_msh_ns::read_msh 
+[read_files] 
+[read_files] Reading equation ...
+[read_files] Number of equations (nEq): 1
+[read_files] 
+[read_files] ----- iEq 0 -----
+[read_eq] 
+[read_eq] ========== read_eq ==========
+[read_eq] Type (eqName): CEP
+[read_eq] 
+[read_eq] Initializing coupled BC ... 
+[read_eq] cplbc_type_str: 
+[set_equation_properties] 
+[set_equation_properties] ========== set_equation_properties ==========
+[set_equation_properties] eq_type_str: CEP
+[read_eq] ------- set CEP properties -------
+[read_domain] 
+[read_domain] ========== read_domain ==========
+[read_domain] physI.size(): 0
+[read_domain] nPhys: 1
+[read_domain] phys.size():: 1
+[read_domain] lEq.nDmn: 2
+[read_domain] flag: 0
+[read_domain] domain_defined: 1
+[read_domain] 
+[read_domain] ---------- iDmn 0 ----------
+[read_domain] domain_params.id: 1
+[read_domain] nPhys: 1
+[read_domain] iPhys: 0
+[read_domain] 
+[read_domain] Set domain properties ...
+[read_domain] maxNProp: 10
+[read_domain] lEq.dmn[iDmn].phys: 210
+[read_domain] set fluid_density: 5.0000000000000000e-01
+[read_domain] set backflow_stab: 2.0000000000000001e-01
+[read_domain] set f_x 
+[read_domain] set f_y 
+[read_cep] 
+[read_cep] ========== read_cep ==========
+[read_cep] Electrophysiology model: ap
+[read_cep] lDmn.cep.nX: 2
+[read_cep] lDmn.cep.nG: 0
+[read_cep] cep_mod.nXion: 2
+[read_cep]  
+[read_cep] lDmn.cep.Diso: 1.0000000000000000e+00
+[read_cep] lDmn.cep.nFn: 1
+[read_cep] domain_params.anisotropic_conductivity.size(): 0
+[read_cep] 
+[read_cep] 
+[read_cep] ode_solver: euler
+[read_domain] 
+[read_domain] ---------- iDmn 1 ----------
+[read_domain] domain_params.id: 2
+[read_domain] nPhys: 1
+[read_domain] iPhys: 0
+[read_domain] 
+[read_domain] Set domain properties ...
+[read_domain] maxNProp: 10
+[read_domain] lEq.dmn[iDmn].phys: 210
+[read_domain] set fluid_density: 5.0000000000000000e-01
+[read_domain] set backflow_stab: 2.0000000000000001e-01
+[read_domain] set f_x 
+[read_domain] set f_y 
+[read_cep] 
+[read_cep] ========== read_cep ==========
+[read_cep] Electrophysiology model: ap
+[read_cep] lDmn.cep.nX: 2
+[read_cep] lDmn.cep.nG: 0
+[read_cep] cep_mod.nXion: 2
+[read_cep]  
+[read_cep] lDmn.cep.Diso: 1.0000000000000000e+00
+[read_cep] lDmn.cep.nFn: 1
+[read_cep] domain_params.anisotropic_conductivity.size(): 0
+[read_cep] 
+[read_cep] Read Stimulus parameters ... 
+[read_cep] lDmn.cep.Istim.A: 1.0000000000000000e+01
+[read_cep] 
+[read_cep] ode_solver: euler
+[read_ls] 
+[read_ls] ========== read_ls ==========
+[read_ls] Using gmres linear solver.
+[fsils_ls_create] 
+[fsils_ls_create] =========== fsils_ls_create ==========
+[fsils_ls_create] LS_type: LS_TYPE_GMRES 
+[fsils_ls_create] Set ls.RI.absTol: 1.0000000000000000e-10
+[fsils_ls_create] Set ls.GM.absTol: 1.0000000000000000e-10
+[read_ls] lEq.ls.mItr: 100
+[read_ls] lEq.FSILS.RI.mItr: 100
+[read_ls] lEq.FSILS.RI.relTol: 9.9999999999999995e-07
+[read_ls] lEq.FSILS.RI.absTol: 1.0000000000000000e-10
+[read_ls] lEq.FSILS.RI.sD: 50
+[read_outputs] 
+[read_outputs] ========== read_outputs ==========
+[read_outputs] eq_params.type.value(): CEP
+[read_outputs] nDOP[0]: 1
+[read_outputs] nOut: 1
+[read_outputs] j: 0
+[read_outputs] lEq.nOutput: 1
+[read_outputs] lEq.output[i].name: Action_potential value: 1
+[read_eq] msh.nFs: 1
+[read_eq] 
+[read_eq] Searching for BCs ...
+[read_eq] Type (eqName): CEP
+[read_eq] Number of imposed BCs: 0
+[read_eq] 
+[read_eq] Searching for body forces ...
+[read_eq] lEq.nBf: 0
+[read_files] #### eq.FSILS.GM.sD: 33
+[read_files] eq.phys: 210
+[read_files] com_mod.mvMsh: 0
+[read_files] set com_mod.cplBC.nX to 0 
+ Configuration is completed successfully
+[read_files] ========== 
+[read_files] Check eq.FSILS.GM.sD ... 
+[read_files] eq.FSILS.GM.sD: 33
+[read_files] Done. 
+
+========== distribute_data (cpp) ==========
+[distribute:0] 
+[distribute:0] ========== distribute ==========
+[distribute:0]  com_mod.resetSim: 0
+[distribute:0] 
+[distribute:0]  chnl_mod.pClr: 1
+[distribute:0]  chnl_mod.appPath.pClr: 2-procs/
+[distribute:0] master process 
+[distribute:0] 
+[distribute:0]  com_mod.nMsh: 1
+[distribute:0]  com_mod.gtnNo: 160801
+[distribute:0]  com_mod.nsd: 2
+[distribute:0]  com_mod.rmsh.isReqd: 0
+[distribute:0] num_proc: 2
+[distribute:0] com_mod.gtnNo: 160801
+[distribute:0] com_mod.nMsh: 1
+[distribute:0] Rough estimation how each mesh should be split ... 
+[distribute:0] ----- i 0 -----
+[distribute:0] com_mod.msh[i].gnNo: 160801
+[distribute:0] com_mod.msh[i].name: msh
+[distribute:0] wrk[0]: 1.0000000000000000e+00
+[distribute:0] cm.bcast(cm_mod, wrk) ... 
+[distribute:0] 
+[distribute:0] Partition meshes ... 
+[distribute:1] 
+[distribute:1]  chnl_mod.pClr: 1
+[distribute:1]  chnl_mod.appPath.pClr: 2-procs/
+[distribute:1] slave process 
++ + + + +  mshType ctor + + + + + 
+[distribute:1] 
+[distribute:1]  com_mod.nMsh: 1
+[distribute:1]  com_mod.gtnNo: 160801
+[distribute:1]  com_mod.nsd: 2
+[distribute:1]  com_mod.rmsh.isReqd: 0
+[distribute:1] num_proc: 2
+[distribute:1] com_mod.gtnNo: 160801
+[distribute:1] com_mod.nMsh: 1
+[distribute:1] Rough estimation how each mesh should be split ... 
+[distribute:1] ----- i 0 -----
+[distribute:1] com_mod.msh[i].gnNo: 0
+[distribute:1] com_mod.msh[i].name: 
+[distribute:1] wrk[0]: 0.0000000000000000e+00
+[distribute:1] cm.bcast(cm_mod, wrk) ... 
+[distribute:1] 
+[distribute:1] Partition meshes ... 
+[distribute:0] wgt: 
+[distribute:0] d wgt[0,0]:5.0000000000000000e-01
+[distribute:0] d wgt[0,1]:5.0000000000000000e-01
+[distribute:0] Partitioning mesh: 0
+[distribute:0]   sum: 1.0000000000000000e+00
+[distribute:1] wgt: 
+[distribute:1] d wgt[0,0]:5.0000000000000000e-01
+[distribute:1] d wgt[0,1]:5.0000000000000000e-01
+[distribute:1] Partitioning mesh: 0
+[distribute:1]   sum: 1.0000000000000000e+00
+[select_ele] 
+[select_ele] ========== nn::select_ele ==========
+[select_ele] Mesh name: 'msh'
+[select_ele]      eNoN: 4
+[select_ele] mesh.lShl: 0
+[select_ele] com_mod.nsd: 2
+[select_ele] insd: 2
+[select_ele] mesh.eType: 106
+[select_ele] mesh.nG: 4
+[split:1] ========== metis split_ ========= 
+[split:1] nTasks: 2
+[split:0] ========== metis split_ ========= 
+[split:0] nTasks: 2
+[split:0] edgecut: 564 
+[split:0] Done.
+[split:1] edgecut: 564 
+[split:1] Done.
+[distribute:0] 
+[distribute:0] Setting gtl pointer ... 
+[distribute:1] 
+[distribute:1] Setting gtl pointer ... 
+[distribute:0] 
+[distribute:0] Rearrange body force structure ... 
+[distribute:0] 
+[distribute:0] Partitioning the faces ... 
++ + + + +  mshType ctor + + + + + 
+[part_face:0] 
+[part_face:0] ========== part_face ==========
+[part_face:0] lFa.name: bottom
+[part_face:0] 
+[part_face:0] Broadcasting the number of nodes ... 
+[part_face:0] 
+[part_face:0] gFa.d: 0
+[part_face:0] gFa.eNoN: 2
+[part_face:0] gFa.iM: 0
+[part_face:0] gFa.nEl: 400
+[part_face:0] gFa.gnEl: 400
+[part_face:0] gFa.nNo: 401
+[part_face:0] 
+[part_face:0] eNoNb: 2
+[part_face:0] iM: 0
+[distribute:1] 
+[distribute:1] Rearrange body force structure ... 
+[distribute:1] 
+[distribute:1] Partitioning the faces ... 
++ + + + +  mshType ctor + + + + + 
+[part_face:1] 
+[part_face:1] ========== part_face ==========
+[part_face:1] lFa.name: 
+[part_face:1] 
+[part_face:1] Broadcasting the number of nodes ... 
+[part_face:1] 
+[part_face:1] gFa.d: 0
+[part_face:1] gFa.eNoN: 2
+[part_face:1] gFa.iM: 0
+[part_face:1] gFa.nEl: 400
+[part_face:1] gFa.gnEl: 400
+[part_face:1] gFa.nNo: 401
+[part_face:0] Set part[] ... 
+[part_face:0] i: 2001
+[part_face:1] 
+[part_face:1] eNoNb: 2
+[part_face:1] iM: 0
+[part_face:1] Set part[] ... 
+[part_face:1] i: 2001
+[part_face:0] 
+[part_face:0] Finding the number of lM%fas to allocate ...
+[part_face:0] lFa.name: bottom
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] lFa.nEl: 0
+[part_face:0] Set lFa.nNo ... 
+[part_face:1] 
+[part_face:1] Finding the number of lM%fas to allocate ...
+[part_face:1] lFa.name: bottom
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] lFa.nNo: 0
+[part_face:0] 
+[part_face:0] Time to form face structure ...
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:1] lFa.nEl: 400
+[part_face:0] j: 0
+[part_face:0] 
+[part_face:0] copying the nodes ...
+[part_face:0] node j: 0
+[part_face:0] Done 
+[part_face:0] 
+[part_face:0] ========== part_face ==========
+[part_face:0] lFa.name: top
+[part_face:0] 
+[part_face:0] Broadcasting the number of nodes ... 
+[part_face:0] 
+[part_face:0] gFa.d: 0
+[part_face:0] gFa.eNoN: 2
+[part_face:0] gFa.iM: 0
+[part_face:1] Set lFa.nNo ... 
+[part_face:1] lFa.nNo: 401
+[part_face:1] 
+[part_face:1] Time to form face structure ...
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] gFa.nEl: 400
+[part_face:0] gFa.gnEl: 400
+[part_face:0] gFa.nNo: 401
+[part_face:0] 
+[part_face:0] eNoNb: 2
+[part_face:0] iM: 0
+[part_face:1] j: 400
+[part_face:1] 
+[part_face:1] copying the nodes ...
+[part_face:1] node j: 401
+[part_face:1] Done 
+[part_face:1] 
+[part_face:1] ========== part_face ==========
+[part_face:1] lFa.name: 
+[part_face:1] 
+[part_face:1] Broadcasting the number of nodes ... 
+[part_face:0] Set part[] ... 
+[part_face:0] i: 2001
+[part_face:1] 
+[part_face:1] gFa.d: 0
+[part_face:1] gFa.eNoN: 2
+[part_face:1] gFa.iM: 0
+[part_face:1] gFa.nEl: 400
+[part_face:1] gFa.gnEl: 400
+[part_face:1] gFa.nNo: 401
+[part_face:1] 
+[part_face:1] eNoNb: 2
+[part_face:1] iM: 0
+[part_face:1] Set part[] ... 
+[part_face:1] i: 2001
+[part_face:0] 
+[part_face:0] Finding the number of lM%fas to allocate ...
+[part_face:0] lFa.name: top
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] lFa.nEl: 400
+[part_face:0] Set lFa.nNo ... 
+[part_face:0] lFa.nNo: 401
+[part_face:0] 
+[part_face:0] Time to form face structure ...
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:1] 
+[part_face:1] Finding the number of lM%fas to allocate ...
+[part_face:1] lFa.name: top
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] j: 400
+[part_face:0] 
+[part_face:1] lFa.nEl: 0
+[part_face:1] Set lFa.nNo ... 
+[part_face:1] lFa.nNo: 0
+[part_face:1] 
+[part_face:1] Time to form face structure ...
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] copying the nodes ...
+[part_face:0] node j: 401
+[part_face:0] Done 
+[part_face:0] 
+[part_face:0] ========== part_face ==========
+[part_face:0] lFa.name: left
+[part_face:0] 
+[part_face:1] j: 0
+[part_face:1] 
+[part_face:1] copying the nodes ...
+[part_face:1] node j: 0
+[part_face:1] Done 
+[part_face:0] Broadcasting the number of nodes ... 
+[part_face:0] 
+[part_face:0] gFa.d: 0
+[part_face:0] gFa.eNoN: 2
+[part_face:0] gFa.iM: 0
+[part_face:0] gFa.nEl: 400
+[part_face:0] gFa.gnEl: 400
+[part_face:0] gFa.nNo: 401
+[part_face:0] 
+[part_face:0] eNoNb: 2
+[part_face:0] iM: 0
+[part_face:1] 
+[part_face:1] ========== part_face ==========
+[part_face:1] lFa.name: 
+[part_face:1] 
+[part_face:1] Broadcasting the number of nodes ... 
+[part_face:1] 
+[part_face:1] gFa.d: 0
+[part_face:1] gFa.eNoN: 2
+[part_face:1] gFa.iM: 0
+[part_face:1] gFa.nEl: 400
+[part_face:1] gFa.gnEl: 400
+[part_face:1] gFa.nNo: 401
+[part_face:1] 
+[part_face:1] eNoNb: 2
+[part_face:1] iM: 0
+[part_face:0] Set part[] ... 
+[part_face:0] i: 2001
+[part_face:1] Set part[] ... 
+[part_face:1] i: 2001
+[part_face:0] 
+[part_face:0] Finding the number of lM%fas to allocate ...
+[part_face:0] lFa.name: left
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] lFa.nEl: 177
+[part_face:0] Set lFa.nNo ... 
+[part_face:0] lFa.nNo: 178
+[part_face:0] 
+[part_face:0] Time to form face structure ...
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:1] 
+[part_face:1] Finding the number of lM%fas to allocate ...
+[part_face:1] lFa.name: left
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] j: 177
+[part_face:0] 
+[part_face:0] copying the nodes ...
+[part_face:1] lFa.nEl: 223
+[part_face:1] Set lFa.nNo ... 
+[part_face:0] node j: 178
+[part_face:0] Done 
+[part_face:0] 
+[part_face:0] ========== part_face ==========
+[part_face:0] lFa.name: right
+[part_face:0] 
+[part_face:0] Broadcasting the number of nodes ... 
+[part_face:0] 
+[part_face:0] gFa.d: 0
+[part_face:0] gFa.eNoN: 2
+[part_face:0] gFa.iM: 0
+[part_face:1] lFa.nNo: 224
+[part_face:1] 
+[part_face:1] Time to form face structure ...
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] gFa.nEl: 400
+[part_face:0] gFa.gnEl: 400
+[part_face:0] gFa.nNo: 401
+[part_face:0] 
+[part_face:0] eNoNb: 2
+[part_face:0] iM: 0
+[part_face:1] j: 223
+[part_face:1] 
+[part_face:1] copying the nodes ...
+[part_face:1] node j: 224
+[part_face:1] Done 
+[part_face:1] 
+[part_face:1] ========== part_face ==========
+[part_face:1] lFa.name: 
+[part_face:1] 
+[part_face:1] Broadcasting the number of nodes ... 
+[part_face:1] 
+[part_face:1] gFa.d: 0
+[part_face:1] gFa.eNoN: 2
+[part_face:1] gFa.iM: 0
+[part_face:1] gFa.nEl: 400
+[part_face:1] gFa.gnEl: 400
+[part_face:1] gFa.nNo: 401
+[part_face:1] 
+[part_face:0] Set part[] ... 
+[part_face:0] i: 2001
+[part_face:1] eNoNb: 2
+[part_face:1] iM: 0
+[part_face:1] Set part[] ... 
+[part_face:0] 
+[part_face:0] Finding the number of lM%fas to allocate ...
+[part_face:0] lFa.name: right
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:1] i: 2001
+[part_face:0] lFa.nEl: 145
+[part_face:0] Set lFa.nNo ... 
+[part_face:0] lFa.nNo: 146
+[part_face:0] 
+[part_face:0] Time to form face structure ...
+[part_face:0] lM.eDist[task_id]: 0
+[part_face:0] lM.eDist[task_id+1]: 77178
+[part_face:0] j: 145
+[part_face:0] 
+[part_face:0] copying the nodes ...
+[part_face:1] 
+[part_face:1] Finding the number of lM%fas to allocate ...
+[part_face:1] lFa.name: right
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:1] lFa.nEl: 255
+[part_face:1] Set lFa.nNo ... 
+[part_face:1] lFa.nNo: 256
+[part_face:1] 
+[part_face:1] Time to form face structure ...
+[part_face:1] lM.eDist[task_id]: 77178
+[part_face:1] lM.eDist[task_id+1]: 160000
+[part_face:0] node j: 146
+[part_face:0] Done 
+[distribute:0] 
+[distribute:0] Sending data read by master to slaves ...
+[part_face:1] j: 255
+[part_face:1] 
+[part_face:1] copying the nodes ...
+[part_face:1] node j: 256
+[part_face:1] Done 
+[distribute:1] 
+[distribute:1] Sending data read by master to slaves ...
+[distribute:1] stopTrigName: STOP_SIM
+[distribute:1] nTS: 10
+[distribute:1] dt: 1.0000000000000000e+00
+[distribute:0] stopTrigName: STOP_SIM
+[distribute:0] nTS: 10
+[distribute:0] dt: 1.0000000000000000e+00
+[distribute:0] 
+[distribute:0] Distributing X to processors  ...
+[distribute:1] 
+[distribute:1] Distributing X to processors  ...
+[Array copy] 
+[Array copy] c c c c c Array copy rhs c c c c c 
+[Array copy] this.name: 
+[Array copy] this.data: 0x0
+[Array copy] rhs.name: [x]
+[Array copy] rhs.data: 0x7fd883afd000
+[Array assignment] 
+[Array assignment] = = = = = Array assignment = = = = = [x]
+[distribute:0] com_mod.dmnId.size(): 160801
+[distribute:0] flag: 1
+[distribute:0] 
+[distribute:0] Distributing lM%dmnId ...
+[distribute:1] com_mod.dmnId.size(): 0
+[distribute:1] flag: 1
+[distribute:1] 
+[distribute:1] Distributing lM%dmnId ...
+[distribute:1] com_mod.pS0.size(): 0
+[distribute:1] ALLOCATED(Dinit): 0
+[distribute:1] 
+[distribute:1] Distributing equations ...
+[distribute:1] com_mod.nEq: 1
+[dist_eq:1] 
+[dist_eq:1] ========== dist_eq ==========
+[dist_eq:1] 
+[dist_eq:1] Distribute equation parameters ... 
+[dist_eq:1] lEq.nOutput: 1
+[dist_eq:1] lEq.nDmn: 2
+[dist_eq:1] lEq.phys: 210
+[dist_eq:1] 
+[dist_eq:1] Distribute linear solver settings ...
+[dist_eq:1] lEq.phys: 210
+[dist_eq:1] lEq.ls.relTol: 0.0000000000000000e+00
+[dist_eq:1] lEq.ls.absTol: 1.0000000000000000e-08
+[dist_eq:1] lEq.ls.mItr: 100
+[dist_eq:1] lEq.ls.sD: 0
+[distribute:0] com_mod.pS0.size(): 0
+[distribute:0] ALLOCATED(Dinit): 0
+[distribute:0] 
+[distribute:0] Distributing equations ...
+[distribute:0] com_mod.nEq: 1
+[dist_eq:0] 
+[dist_eq:0] ========== dist_eq ==========
+[dist_eq:0] 
+[dist_eq:0] Distribute equation parameters ... 
+[dist_eq:0] lEq.nOutput: 1
+[dist_eq:0] lEq.nDmn: 2
+[dist_eq:0] lEq.phys: 210
+[dist_eq:0] 
+[dist_eq:0] Distribute linear solver settings ...
+[dist_eq:0] lEq.phys: 210
+[dist_eq:0] lEq.ls.relTol: 0.0000000000000000e+00
+[dist_eq:0] lEq.ls.absTol: 1.0000000000000000e-08
+[dist_eq:0] lEq.ls.mItr: 100
+[dist_eq:0] lEq.ls.sD: 0
+[dist_eq:0] ----- Distribute eq domain 0 -----
+[dist_eq:0] dmn.phys: 210
+[dist_eq:0] dmn.Id: 1
+[dist_eq:1] ----- Distribute eq domain 0 -----
+[dist_eq:1] dmn.phys: 210
+[dist_eq:1] dmn.Id: 1
+[dist_eq:0] dmn.prop.size(): 5
+[dist_eq:0]   prop: 0 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 1 value: 5.0000000000000000e-01
+[dist_eq:0]   prop: 7 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 8 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 10 value: 2.0000000000000001e-01
+[dist_eq:0] ----- Distribute eq domain 1 -----
+[dist_eq:0] dmn.phys: 210
+[dist_eq:0] dmn.Id: 2
+[dist_eq:0] dmn.prop.size(): 5
+[dist_eq:0]   prop: 0 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 1 value: 5.0000000000000000e-01
+[dist_eq:0]   prop: 7 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 8 value: 0.0000000000000000e+00
+[dist_eq:0]   prop: 10 value: 2.0000000000000001e-01
+[dist_eq:1] dmn.prop.size(): 5
+[dist_eq:1]   prop: 0 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 1 value: 5.0000000000000000e-01
+[dist_eq:1]   prop: 7 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 8 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 10 value: 2.0000000000000001e-01
+[dist_eq:1] ----- Distribute eq domain 1 -----
+[dist_eq:1] dmn.phys: 210
+[dist_eq:1] dmn.Id: 2
+[dist_eq:1] dmn.prop.size(): 5
+[dist_eq:1]   prop: 0 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 1 value: 5.0000000000000000e-01
+[dist_eq:1]   prop: 7 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 8 value: 0.0000000000000000e+00
+[dist_eq:1]   prop: 10 value: 2.0000000000000001e-01
+[dist_eq:1] Distribute output parameters ... 
+[dist_eq:0] Distribute output parameters ... 
+[dist_eq:0] Distribute BC information ... 
+[dist_eq:0] 
+[dist_eq:0] lEq.nBc: 0
+[distribute:0] Communicating cplBC data ... 
+[dist_eq:1] Distribute BC information ... 
+[dist_eq:1] 
+[dist_eq:1] lEq.nBc: 0
+[distribute:1] Communicating cplBC data ... 
+[distribute:1] cplBC.nX: 0
+[distribute:0] cplBC.nX: 0
+[distribute:0] bcast cplBC.nX: 0
+[distribute:1] bcast cplBC.nX: 0
+- - - - -  mshType dtor - - - - - 
+Done distribute_data (cpp) 
+
+
+
+========== initialize_solution (cpp) ==========
+[initialize_solution] eq.FSILS.GM.sD: 33
+[initialize:1] 
+[initialize:1] ========== initialize ==========
+- - - - -  mshType dtor - - - - - 
+Done distribute_data (cpp) 
+
+
+
+========== initialize_solution (cpp) ==========
+[initialize_solution] eq.FSILS.GM.sD: 33
+[initialize:0] 
+[initialize:0] ========== initialize ==========
+[initialize:0] Number of eqs (nEq): 1
+[initialize:0] eq.nBc: 0
+[initialize:0] nFacesLS(sum): 0
+[initialize:0] nFacesLS: 0
+[initialize:0] com_mod.cplBC.coupled: 0
+[initialize:0] ----- iEq 0 -----
+[initialize:1] Number of eqs (nEq): 1
+[initialize:1] eq.nBc: 0
+[initialize:1] nFacesLS(sum): 0
+[initialize:1] nFacesLS: 0
+[initialize:1] com_mod.cplBC.coupled: 0
+[initialize:1] ----- iEq 0 -----
+[initialize:1] 
+[initialize:1] eq.roInf: 5.0000000000000000e-01
+[initialize:1] eq.am: 8.3333333333333337e-01
+[initialize:1] 
+[initialize:1] dFlag: 0
+[initialize:1] eq.dof: 1
+[initialize:1] eq.sym: EP
+[initialize:1] eq.s: 0
+[initialize:1] 
+[initialize:1] eq.pNorm: 1.7976931348623157e+308
+[initialize:1] eq.af: 6.6666666666666663e-01
+[initialize:0] 
+[initialize:0] eq.roInf: 5.0000000000000000e-01
+[initialize:0] eq.am: 8.3333333333333337e-01
+[initialize:0] 
+[initialize:0] dFlag: 0
+[initialize:0] eq.dof: 1
+[initialize:0] eq.sym: EP
+[initialize:0] eq.s: 0
+[initialize:0] 
+[initialize:0] eq.pNorm: 1.7976931348623157e+308
+[initialize:0] eq.af: 6.6666666666666663e-01
+[initialize:0] eq.beta: 3.4027777777777796e-01
+[initialize:0] eq.gam: 6.6666666666666685e-01
+[initialize:0] tDof: 1
+[initialize:0] 
+[initialize:0] stamp: 2 1 1 77822 0 1 0 
+[initialize:1] eq.beta: 3.4027777777777796e-01
+[initialize:1] eq.gam: 6.6666666666666685e-01
+[initialize:1] tDof: 1
+[initialize:1] 
+[initialize:1] stamp: 2 1 1 83544 0 1 0 
+[initialize:1] Calculating the record length ...
+[initialize:1] com_mod.nEq: 1
+[initialize:1] com_mod.cplBC.nX: 0
+[initialize:1] com_mod.tnNo: 83544
+[initialize:0] Calculating the record length ...
+[initialize:0] com_mod.nEq: 1
+[initialize:0] com_mod.cplBC.nX: 0
+[initialize:0] com_mod.tnNo: 77822
+[initialize:0] tDof: 1
+[initialize:0] com_mod.pstEq: 0
+[initialize:0] com_mod.sstEq: 0
+[initialize:0] i: 2490360
+[initialize:0] MPI_Allreduce ... 
+[initialize:1] tDof: 1
+[initialize:1] com_mod.pstEq: 0
+[initialize:1] com_mod.sstEq: 0
+[initialize:1] i: 2673464
+[initialize:1] MPI_Allreduce ... 
+[initialize:0] i (red): 2490360
+[initialize:0] recLn: 2673464
+[initialize:0] 
+[initialize:0] Initialize shell eIEN data structure ...
+[initialize:0] com_mod.shlEq: 0
+[initialize:0] 
+[initialize:0] Initialize tensor operations ...
+[initialize:1] i (red): 2673464
+[initialize:1] recLn: 2673464
+[initialize:1] 
+[initialize:1] Initialize shell eIEN data structure ...
+[initialize:1] com_mod.shlEq: 0
+[initialize:1] 
+[initialize:1] Initialize tensor operations ...
+[initialize:0] 
+[initialize:0] Constructing stiffness matrix ...
+[initialize:1] 
+[initialize:1] Constructing stiffness matrix ...
+[lhsa:0] 
+[lhsa:0] ========== lhsa ==========
+[lhsa:0] tnNo: 77822
+[lhsa:1] 
+[lhsa:1] ========== lhsa ==========
+[lhsa:1] tnNo: 83544
+[lhsa:0] mnnzeic: 40
+[lhsa:1] mnnzeic: 40
+[lhsa:0] mnnzeic: 40
+[lhsa:1] mnnzeic: 40
+[lhsa:0] nnz: 696532
+[lhsa:0] 
+[lhsa:0] Now constructing compact form of rowPtr ...
+[lhsa:0] nnz: 696532
+[lhsa:1] nnz: 747562
+[lhsa:1] 
+[lhsa:1] Now constructing compact form of rowPtr ...
+[lhsa:1] nnz: 747562
+[initialize:0] nnz: 696532
+[initialize:1] nnz: 747562
+[initialize:1] Total number of non-zeros in LHS matrix: 1444094
+[initialize:1] 
+[initialize:1] Calling fsils_commu_create ...
+[fsils_commu_create:1] 
+[fsils_commu_create:1] ========== fsils_commu_create ==========
+[fsils_commu_create:1] commu.task: 1
+[fsils_commu_create:1] commu.nTasks: 2
+[initialize:0] Total number of non-zeros in LHS matrix: 1444094
+[initialize:0] 
+[initialize:0] Calling fsils_commu_create ...
+[fsils_commu_create:0] 
+[fsils_commu_create:0] ========== fsils_commu_create ==========
+[fsils_commu_create:0] commu.task: 0
+[fsils_commu_create:0] commu.nTasks: 2
+[fsils_commu_create:0] commu.masF: 1
+[fsils_commu_create:0] commu.tF: 0
+[fsils_commu_create:0] Done.
+[initialize:0] 
+[initialize:0] Calling fsils_lhs_create ...
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] ========== fsils_lhs_create ==========
+[fsils_lhs_create:0] gnNo: 160801
+[fsils_lhs_create:0] nNo: 77822
+[fsils_lhs_create:0] nnz: 696532
+[fsils_lhs_create:0] nFaces: 0
+[fsils_lhs_create:0] nTasks: 2
+[fsils_commu_create:1] commu.masF: 0
+[fsils_commu_create:1] commu.tF: 1
+[fsils_commu_create:1] Done.
+[initialize:1] 
+[initialize:1] Calling fsils_lhs_create ...
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] ========== fsils_lhs_create ==========
+[fsils_lhs_create:1] gnNo: 160801
+[fsils_lhs_create:1] nNo: 83544
+[fsils_lhs_create:1] nnz: 747562
+[fsils_lhs_create:1] nFaces: 0
+[fsils_lhs_create:1] nTasks: 2
+[fsils_lhs_create:1] tF: 1
+[fsils_lhs_create:0] tF: 0
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] nNo: 77822
+[fsils_lhs_create:0] maxnNo: 83544
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] nNo: 83544
+[fsils_lhs_create:1] maxnNo: 83544
+[fsils_lhs_create:0] Including the nodes shared ...
+[fsils_lhs_create:0] lhs.mynNo: 77822
+[fsils_lhs_create:0] tF: 0
+[fsils_lhs_create:0] ---- i 1 ----
+[fsils_lhs_create:1] Including the nodes shared ...
+[fsils_lhs_create:1] lhs.mynNo: 83544
+[fsils_lhs_create:1] tF: 1
+[fsils_lhs_create:1] ---- i 1 ----
+[fsils_lhs_create:1] ---- i 0 ----
+[fsils_lhs_create:0] ---- i 0 ----
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Including local nodes ...
+[fsils_lhs_create:0] lhs.shnNo: 0
+[fsils_lhs_create:0] lhs.mynNo: 77257
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Including local nodes ...
+[fsils_lhs_create:1] lhs.shnNo: 565
+[fsils_lhs_create:1] lhs.mynNo: 83544
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Construct rowPtr and colPtr ...
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Construct rowPtr and colPtr ...
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Constructing the communication data ...
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Constructing the communication data ...
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Process shared nodes ...
+[fsils_lhs_create:0] ----- i 0 -----
+[fsils_lhs_create:0] ----- i 1 -----
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Process shared nodes ...
+[fsils_lhs_create:1] ----- i 0 -----
+[fsils_lhs_create:0] lhs.nReq: 1
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Setup the handles ...
+[fsils_lhs_create:0] j: 0
+[fsils_lhs_create:1] ----- i 1 -----
+[fsils_lhs_create:1] lhs.nReq: 1
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Setup the handles ...
+[fsils_lhs_create:1] j: 0
+[fsils_lhs_create:1] a: 565
+[fsils_lhs_create:1] lhs.cS[j].iP: 0
+[fsils_lhs_create:1] lhs.cS[j].n: 565
+[fsils_lhs_create:1] 
+[fsils_lhs_create:1] Order of nodes ...
+[fsils_lhs_create:1] MPI_Recv from iP: 0
+[fsils_lhs_create:1] lhs.cS[i].n: 565
+[fsils_lhs_create:0] a: 565
+[fsils_lhs_create:0] lhs.cS[j].iP: 1
+[fsils_lhs_create:0] lhs.cS[j].n: 565
+[fsils_lhs_create:0] 
+[fsils_lhs_create:0] Order of nodes ...
+[fsils_lhs_create:0] MPI_Send to iP: 1
+[fsils_lhs_create:0] lhs.cS[i].n: 565
+[fsils_lhs_create:0] Done
+[initialize:0] tDof: 1
+[initialize:0] tnNo: 77822
+[fsils_lhs_create:1] Done
+[initialize:1] tDof: 1
+[initialize:1] tnNo: 83544
+[initialize:0] 
+[initialize:0] Setup rmsh ...
+[initialize:0] flag: 0
+[initialize:0] iniFilePath: 
+[zero_init:0] 
+[zero_init:0] ========== zero_init ==========
+[initialize:0] 
+[initialize:0] Initialize new variables ...
+[initialize:1] 
+[initialize:1] Setup rmsh ...
+[initialize:1] flag: 0
+[initialize:1] iniFilePath: 
+[zero_init:1] 
+[zero_init:1] ========== zero_init ==========
+[initialize:1] 
+[initialize:1] Initialize new variables ...
+[initialize:0] -----iM 0 -----
+[initialize:0] write fTmp: 2-procs/.partitioning_msh.bin
+[initialize:0] write sTmp: 2-procs/.partitioning_msh_0.bin
+[initialize:0] 
+[initialize:0] Initialize function spaces ...
+[init_fs_msh:0] 
+[init_fs_msh:0] ========== init_fs_msh ==========
+[init_fs_msh:0] lM.nFs: 1
+[init_fs_msh:0] lM.eNoN: 4
+[init_fs_msh:0] lM.nG: 4
+[init_fs_msh:0] lM.lShpF: 0
+[init_fs_msh:0] lM.fs[0].lShpF: 0
+[init_fs_msh:0] lM.fs[0].Nxx.size(): 48
+[init_fs_face:0] 
+[init_fs_face:0] ========== init_fs_face ==========
+[init_fs_face:0] lFa.nFs: 1
+[init_fs_face:0] 
+[init_fs_face:0] ========== init_fs_face ==========
+[init_fs_face:0] lFa.nFs: 1
+[init_fs_face:0] 
+[init_fs_face:0] ========== init_fs_face ==========
+[init_fs_face:0] lFa.nFs: 1
+[init_fs_face:0] 
+[init_fs_face:0] ========== init_fs_face ==========
+[init_fs_face:0] lFa.nFs: 1
+[initialize:0] 
+[initialize:0] Calculating the volume of each domain ...
+[initialize:0] Equation: EP
+[initialize:0] eq.nDmn: 2
+[initialize:0] iDmn: 0
+[initialize:0] i: 1
+[initialize:1] -----iM 0 -----
+[initialize:1] 
+[initialize:1] Initialize function spaces ...
+[init_fs_msh:1] 
+[init_fs_msh:1] ========== init_fs_msh ==========
+[init_fs_msh:1] lM.nFs: 1
+[init_fs_msh:1] lM.eNoN: 4
+[init_fs_msh:1] lM.nG: 4
+[init_fs_msh:1] lM.lShpF: 0
+[init_fs_msh:1] lM.fs[0].lShpF: 0
+[init_fs_msh:1] lM.fs[0].Nxx.size(): 48
+[init_fs_face:1] 
+[init_fs_face:1] ========== init_fs_face ==========
+[init_fs_face:1] lFa.nFs: 1
+[init_fs_face:1] 
+[init_fs_face:1] ========== init_fs_face ==========
+[init_fs_face:1] lFa.nFs: 1
+[init_fs_face:1] 
+[init_fs_face:1] ========== init_fs_face ==========
+[init_fs_face:1] lFa.nFs: 1
+[init_fs_face:1] 
+[init_fs_face:1] ========== init_fs_face ==========
+[init_fs_face:1] lFa.nFs: 1
+[initialize:1] 
+[initialize:1] Calculating the volume of each domain ...
+[initialize:1] Equation: EP
+[initialize:1] eq.nDmn: 2
+[initialize:1] iDmn: 0
+[initialize:1] i: 1
+[initialize:0] Volume of domain 0: 9.9000000000000000e+03
+[initialize:0] iDmn: 1
+[initialize:0] i: 2
+[initialize:1] Volume of domain 0: 9.9000000000000000e+03
+[initialize:1] iDmn: 1
+[initialize:1] i: 2
+[initialize:0] Volume of domain 1: 1.0000000000000000e+02
+[initialize:0] 
+[initialize:0] Preparing faces and BCs ...
+[baf_ini:0] 
+[baf_ini:0] ========== baf_ini ==========
+[baf_ini:0] iM: 0
+[face_ini:0] 
+[face_ini:0] ========== face_ini ==========
+[face_ini:0] lM.eType: 106
+[face_ini:0] lM.eNoN: 4
+[face_ini:0] lFa.eNoN: 2
+[face_ini:0] Calculating face area ... 
+[initialize:1] Volume of domain 1: 1.0000000000000000e+02
+[initialize:1] 
+[initialize:1] Preparing faces and BCs ...
+[baf_ini:1] 
+[baf_ini:1] ========== baf_ini ==========
+[baf_ini:1] iM: 0
+[face_ini:1] 
+[face_ini:1] ========== face_ini ==========
+[face_ini:1] lM.eType: 106
+[face_ini:1] lM.eNoN: 4
+[face_ini:1] lFa.eNoN: 2
+[face_ini:1] Calculating face area ... 
+[face_ini:0] Face 'bottom' area: 1.0000000000000000e+02
+[face_ini:0] Compute face normals at nodes ... 
+[face_ini:1] Face 'bottom' area: 1.0000000000000000e+02
+[face_ini:1] Compute face normals at nodes ... 
+[face_ini:0] Flag: 0
+[face_ini:1] Flag: 0
+[face_ini:0] Compute node normals ...
+[face_ini:0] 
+[face_ini:0] ========== face_ini ==========
+[face_ini:0] lM.eType: 106
+[face_ini:0] lM.eNoN: 4
+[face_ini:0] lFa.eNoN: 2
+[face_ini:0] Calculating face area ... 
+[face_ini:1] Compute node normals ...
+[face_ini:1] 
+[face_ini:1] ========== face_ini ==========
+[face_ini:1] lM.eType: 106
+[face_ini:1] lM.eNoN: 4
+[face_ini:1] lFa.eNoN: 2
+[face_ini:1] Calculating face area ... 
+[face_ini:0] Face 'top' area: 1.0000000000000000e+02
+[face_ini:0] Compute face normals at nodes ... 
+[face_ini:1] Face 'top' area: 1.0000000000000000e+02
+[face_ini:1] Compute face normals at nodes ... 
+[face_ini:0] Flag: 0
+[face_ini:1] Flag: 0
+[face_ini:0] Compute node normals ...
+[face_ini:0] 
+[face_ini:0] ========== face_ini ==========
+[face_ini:0] lM.eType: 106
+[face_ini:0] lM.eNoN: 4
+[face_ini:0] lFa.eNoN: 2
+[face_ini:0] Calculating face area ... 
+[face_ini:1] Compute node normals ...
+[face_ini:1] 
+[face_ini:1] ========== face_ini ==========
+[face_ini:1] lM.eType: 106
+[face_ini:1] lM.eNoN: 4
+[face_ini:1] lFa.eNoN: 2
+[face_ini:1] Calculating face area ... 
+[face_ini:0] Face 'left' area: 1.0000000000000000e+02
+[face_ini:0] Compute face normals at nodes ... 
+[face_ini:1] Face 'left' area: 1.0000000000000000e+02
+[face_ini:1] Compute face normals at nodes ... 
+[face_ini:0] Flag: 0
+[face_ini:1] Flag: 0
+[face_ini:0] Compute node normals ...
+[face_ini:0] 
+[face_ini:0] ========== face_ini ==========
+[face_ini:0] lM.eType: 106
+[face_ini:0] lM.eNoN: 4
+[face_ini:0] lFa.eNoN: 2
+[face_ini:0] Calculating face area ... 
+[face_ini:1] Compute node normals ...
+[face_ini:1] 
+[face_ini:1] ========== face_ini ==========
+[face_ini:1] lM.eType: 106
+[face_ini:1] lM.eNoN: 4
+[face_ini:1] lFa.eNoN: 2
+[face_ini:1] Calculating face area ... 
+[face_ini:1] Face 'right' area: 1.0000000000000000e+02
+[face_ini:1] Compute face normals at nodes ... 
+[face_ini:0] Face 'right' area: 1.0000000000000000e+02
+[face_ini:0] Compute face normals at nodes ... 
+[face_ini:0] Flag: 0
+[face_ini:1] Flag: 0
+[face_ini:0] Compute node normals ...
+[baf_ini:0] Setting up FSILS ... 
+[baf_ini:0] Done
+[initialize:0] 
+[initialize:0] call BIN to VTK for conversion  ...
+[initialize:0] com_mod.bin2VTK: 0
+[initialize:0] Set BC Dir ...
+[initialize:0] Preparing TXT files ...
+[face_ini:1] Compute node normals ...
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+[initialize:0] Done
+[initialize_solution (cpp)] timep[0]: 0.0000000000000000e+00
+[initialize_solution (cpp)] timep[1]: 0.0000000000000000e+00
+[initialize_solution (cpp)] timep[2]: 0.0000000000000000e+00
+[initialize_solution (cpp)] Done. 
+
+
+[iterate_solution:0] 
+[iterate_solution:0] ========== iterate_solution ==========
+[iterate_solution:0] tDof: 1
+[iterate_solution:0] tnNo: 77822
+[iterate_solution:0] nFacesLS: 0
+[baf_ini:1] Setting up FSILS ... 
+[baf_ini:1] Done
+[initialize:1] 
+[initialize:1] call BIN to VTK for conversion  ...
+[initialize:1] com_mod.bin2VTK: 0
+[initialize:1] Set BC Dir ...
+[iterate_solution:0] stopTS: 10
+[initialize:1] Preparing TXT files ...
+[iterate_solution:0] 
+[iterate_solution:0] cTS: 0
+[iterate_solution:0] nITs: 0
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] 
+[iterate_solution:0] Start Outer Loop ...
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] New time step size (dt): 1.0000000000000000e+00
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 1
+[iterate_solution:0] time: 1.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 1.0000000000000000e+00
+[initialize:1] Done
+[initialize_solution (cpp)] timep[0]: 0.0000000000000000e+00
+[initialize_solution (cpp)] timep[1]: 0.0000000000000000e+00
+[initialize_solution (cpp)] timep[2]: 0.0000000000000000e+00
+[initialize_solution (cpp)] Done. 
+
+
+[iterate_solution:1] 
+[iterate_solution:1] ========== iterate_solution ==========
+[iterate_solution:1] tDof: 1
+[iterate_solution:1] tnNo: 83544
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] stopTS: 10
+[iterate_solution:1] 
+[iterate_solution:1] cTS: 0
+[iterate_solution:1] nITs: 0
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] 
+[iterate_solution:1] Start Outer Loop ...
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] New time step size (dt): 1.0000000000000000e+00
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 1
+[iterate_solution:1] time: 1.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 1.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 1-1  3.000e+00  [0 1.000e+00 1.000e+00 7.691e-07]  [38 -141 67]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_001_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 1-2s 7.000e+00  [-122 7.565e-07 7.565e-07 8.887e-07]  [42 -139 75]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_001_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 0
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 0
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 2
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 3
+[int_msh_data:1] 
+[int_msh_data:1] !com_mod.savedOnce || com_mod.nMsh > 1 
+[int_msh_data:1] com_mod.dmnId.size(): 83544
+[int_msh_data:1] com_mod.dmnId.size() != 0 
+[int_msh_data:1] sCount(i): 77178
+[int_msh_data:1] sCount(i): 82822
+[int_msh_data:1] Send lM.eId.data to tmpI.data ... 
+[int_msh_data:1]   lM.nEl: 82822
+[int_msh_data:1]   lM.eId.size(): 82822
+[int_msh_data:1]   tmpI.size(): 0
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 2
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 3
+[int_msh_data:0] 
+[int_msh_data:0] !com_mod.savedOnce || com_mod.nMsh > 1 
+[int_msh_data:0] com_mod.dmnId.size(): 77822
+[int_msh_data:0] com_mod.dmnId.size() != 0 
+[int_msh_data:0] sCount(i): 77178
+[int_msh_data:0] sCount(i): 82822
+[int_msh_data:0] Send lM.eId.data to tmpI.data ... 
+[int_msh_data:0]   lM.nEl: 77178
+[int_msh_data:0]   lM.eId.size(): 77178
+[int_msh_data:0]   tmpI.size(): 160000
+[int_msh_data:0] 1 Set d.xe m 1
+[int_msh_data:1]  4 m: 2
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 2
+[iterate_solution:1] time: 2.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 2.0000000000000000e+00
+[int_msh_data:0] Set tmpI m 2
+[int_msh_data:0] 3 Set d.xe m 2
+[int_msh_data:0]  4 m: 2
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_001_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 0
+[write_vtus:0] ne: 1
+[write_vtus:0] d[iM].xe.nrows: 160000
+[write_vtus:0] d[iM].xe.ncols: 3
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 2
+[iterate_solution:0] time: 2.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 2.0000000000000000e+00
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 2-1  1.200e+01  [0 1.000e+00 6.333e-01 6.153e-07]  [39 -143 60]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_002_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 2-2s 1.500e+01  [-119 1.046e-06 6.625e-07 7.998e-07]  [41 -140 67]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_002_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 3
+[iterate_solution:1] time: 3.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 3.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_002_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 3
+[iterate_solution:0] time: 3.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 3.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 3-1  2.100e+01  [0 1.000e+00 7.658e-01 7.726e-07]  [40 -141 50]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_003_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 3-2s 2.500e+01  [-122 7.316e-07 5.603e-07 5.056e-07]  [41 -145 75]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_003_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 4
+[iterate_solution:1] time: 4.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 4.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_003_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 4
+[iterate_solution:0] time: 4.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 4.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 4-1  3.000e+01  [0 1.000e+00 7.151e-01 9.940e-07]  [40 -138 60]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_004_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 4-2s 3.300e+01  [-121 8.551e-07 6.115e-07 4.478e-07]  [41 -146 67]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_004_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 5
+[iterate_solution:1] time: 5.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 5.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_004_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 5
+[iterate_solution:0] time: 5.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 5.0000000000000000e+00
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 5-1  3.800e+01  [0 1.000e+00 7.298e-01 6.563e-07]  [40 -142 40]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_005_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 5-2s 4.200e+01  [-120 8.960e-07 6.539e-07 7.736e-07]  [41 -141 75]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_005_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 6
+[iterate_solution:1] time: 6.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 6.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_005_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 6
+[iterate_solution:0] time: 6.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 6.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 6-1  4.600e+01  [0 1.000e+00 7.268e-01 1.000e-06]  [40 -138 50]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_006_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 6-2s 5.000e+01  [-120 9.509e-07 6.912e-07 8.575e-07]  [42 -140 75]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_006_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 7
+[iterate_solution:1] time: 7.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 7.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_006_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 7
+[iterate_solution:0] time: 7.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 7.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 7-1  5.400e+01  [0 1.000e+00 7.266e-01 8.097e-07]  [40 -140 50]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_007_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 7-2s 5.800e+01  [-120 9.978e-07 7.250e-07 1.034e-06]  [40 -138 50]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_007_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 8
+[iterate_solution:1] time: 8.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 8.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_007_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 8
+[iterate_solution:0] time: 8.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 8.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 8-1  6.300e+01  [0 1.000e+00 7.291e-01 9.630e-07]  [43 -139 60]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_008_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 8-2s 6.600e+01  [-128 3.612e-07 2.634e-07 2.553e-06]  [39 -129 67]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_008_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 9
+[iterate_solution:1] time: 9.0000000000000000e+00
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 9.0000000000000000e+00
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_008_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 9
+[iterate_solution:0] time: 9.0000000000000000e+00
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 9.0000000000000000e+00
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+ EP 9-1  7.200e+01  [0 1.000e+00 7.299e-01 1.958e-08]  [53 -43 67]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 0
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_009_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 9-2s 7.500e+01  [-154 1.958e-08 1.429e-08 3.811e-05]  [31 -102 67]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 0
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_009_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done
+[iterate_solution:1] 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] =============== Outer Loop ============== 
+[iterate_solution:1] ========================================= 
+[iterate_solution:1] dt: 1.0000000000000000e+00
+[iterate_solution:1] cTS: 10
+[iterate_solution:1] time: 1.0000000000000000e+01
+[iterate_solution:1] Predictor step ... 
+[cep_integ:1] 
+[cep_integ:1] ========== cep_integ ==========
+[cep_integ:1] cem.cpld: 0
+[cep_integ:1] time: 1.0000000000000000e+01
+[int_msh_data:0] d.gx.size(): 482403
+[int_msh_data:0] 0 m: 0
+[int_msh_data:0] d.xe.nrows_: 0
+[int_msh_data:0] d.xe.ncols_: 77178
+[int_msh_data:0] 1 m: 1
+[int_msh_data:0]  4 m: 0
+[int_msh_data:0] Done
+[write_vtus:0] 
+[write_vtus:0] Writing to vtu file ...
+[write_vtus:0] maxnsd: 3
+[write_vtus:0] nNo: 160801
+[write_vtus:0] fName: 2-procs/result_009_cpp.vtu
+[write_vtus:0] Writing the position data ...
+[write_vtus:0] s: 0
+[write_vtus:0] e: 1
+[write_vtus:0] Writing the connectivity data ...
+[write_vtus:0] nEl: 160000
+[write_vtus:0] 
+[write_vtus:0] Writing all solutions ...
+[write_vtus:0] nOut: 2
+[write_vtus:0] 
+[write_vtus:0] >>> iOut: 2
+[write_vtus:0] outNames: Action_potential
+[write_vtus:0] s: 2
+[write_vtus:0] e: 2
+[write_vtus:0] l: 1
+[write_vtus:0] 
+[write_vtus:0] Writing element-based variables ...
+[write_vtus:0] savedOnce: 1
+[iterate_solution:0] 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] =============== Outer Loop ============== 
+[iterate_solution:0] ========================================= 
+[iterate_solution:0] dt: 1.0000000000000000e+00
+[iterate_solution:0] cTS: 10
+[iterate_solution:0] time: 1.0000000000000000e+01
+[iterate_solution:0] Predictor step ... 
+[cep_integ:0] 
+[cep_integ:0] ========== cep_integ ==========
+[cep_integ:0] cem.cpld: 0
+[cep_integ:0] time: 1.0000000000000000e+01
+[iterate_solution:0] Apply Dirichlet BCs strongly ...
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 1 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Apply Dirichlet BCs strongly ...
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 1 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+ EP 10-1  7.900e+01  [0 1.000e+00 7.334e-01 9.299e-07]  [42 -139 50]
+[iterate_solution:0] 
+[iterate_solution:0] ---------- Inner Loop 2 -----------
+[iterate_solution:0] cEq: 0
+[iterate_solution:0] com_mod.eq[cEq].sym: EP
+[iterate_solution:0] Initiator step ...
+[iterate_solution:1] Update corrector ...
+[iterate_solution:0] Allocating the RHS and LHS
+[iterate_solution:0] Set body forces ...
+[iterate_solution:0] Assembling equation 'EP' ... 
+[construct_cep:0] 
+[construct_cep:0] ========== construct_cep ==========
+[construct_cep:0] insd: 2
+[construct_cep:0] tDof: 1
+[construct_cep:0] eNoN: 4
+[construct_cep:0] Dg.nrows: 1
+[construct_cep:0] Dg.ncols: 77822
+[iterate_solution:1] 
+[iterate_solution:1] ---------- Inner Loop 2 -----------
+[iterate_solution:1] cEq: 0
+[iterate_solution:1] com_mod.eq[cEq].sym: EP
+[iterate_solution:1] Initiator step ...
+[iterate_solution:1] Allocating the RHS and LHS
+[iterate_solution:1] Set body forces ...
+[iterate_solution:1] Assembling equation 'EP' ... 
+[construct_cep:1] 
+[construct_cep:1] ========== construct_cep ==========
+[construct_cep:1] insd: 2
+[construct_cep:1] tDof: 1
+[construct_cep:1] eNoN: 4
+[construct_cep:1] Dg.nrows: 1
+[construct_cep:1] Dg.ncols: 83544
+[iterate_solution:0] Mesh 0 is assembled.
+[iterate_solution:0] Apply Neumman or Traction BCs ... 
+[iterate_solution:0] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:0] Synchronize R across processes ...
+[iterate_solution:1] Mesh 0 is assembled.
+[iterate_solution:1] Apply Neumman or Traction BCs ... 
+[iterate_solution:1] Apply weakly applied Dirichlet BCs ... 
+[iterate_solution:1] Synchronize R across processes ...
+[iterate_solution:0] com_mod.sstEq: 0
+[iterate_solution:0] set_bc_undef_neu ...
+[iterate_solution:0] Update res() and incL ...
+[iterate_solution:0] nFacesLS: 0
+[iterate_solution:0] Solving equation 'EP' ...
+[iterate_solution:1] com_mod.sstEq: 0
+[iterate_solution:1] set_bc_undef_neu ...
+[iterate_solution:1] Update res() and incL ...
+[iterate_solution:1] nFacesLS: 0
+[iterate_solution:1] Solving equation 'EP' ...
+[iterate_solution:0] Update corrector ...
+[iterate_solution:0] >>> All OK
+[iterate_solution:0] iEqOld: 1
+[iterate_solution:0] >>> End of inner loop 
+[iterate_solution:0] Saving the TXT files containing average and fluxes ...
+[iterate_solution:0] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:0] 
+[iterate_solution:0] stFileIncr: 1
+[iterate_solution:0] l1: 1
+[iterate_solution:0] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 1
+[write_restart:0] fName: 2-procs/stFile_010_cpp.bin
+[iterate_solution:0] 
+[iterate_solution:0] saveVTK: 1
+[iterate_solution:0] l2: 1
+[iterate_solution:0] l3: 1
+ EP 10-2s 8.300e+01  [-125 5.455e-07 4.000e-07 1.454e-06]  [40 -134 75]
+[write_vtus:0] 
+[write_vtus:0] ========== write_vtus ==========
+[iterate_solution:1] Update corrector ...
+[iterate_solution:1] >>> All OK
+[iterate_solution:1] iEqOld: 1
+[iterate_solution:1] >>> End of inner loop 
+[iterate_solution:1] Saving the TXT files containing average and fluxes ...
+[iterate_solution:1] cm.bcast(cm_mod, &stopTS)  ...
+[iterate_solution:1] 
+[iterate_solution:1] stFileIncr: 1
+[iterate_solution:1] l1: 1
+[iterate_solution:1] l2: 1
+[write_restart:0] 
+[write_restart:0] ========== write_restart ==========
+[write_restart:0] stFileName: 2-procs/stFile
+[write_restart:0] dFlag: 0
+[write_restart:0] sstEq: 0
+[write_restart:0] pstEq: 0
+[write_restart:0] cepEq: 1
+[write_restart:0] 
+[write_restart:0] myID: 2
+[write_restart:0] fName: 2-procs/stFile_010_cpp.bin
+[iterate_solution:1] 
+[iterate_solution:1] saveVTK: 1
+[iterate_solution:1] l2: 1
+[iterate_solution:1] l3: 1
+[write_vtus:1] 
+[write_vtus:1] ========== write_vtus ==========
+[write_vtus:0] lD0: 0
+[write_vtus:0] nEq: 1
+[write_vtus:0] nMsh: 1
+[write_vtus:0] Dinit.size(): 0
+[write_vtus:0] 
+[write_vtus:0] lD0: 0
+[write_vtus:0] nOut: 2
+[write_vtus:0] outDof: 3
+[write_vtus:0] nOute: 0
+[write_vtus:1] lD0: 0
+[write_vtus:1] nEq: 1
+[write_vtus:1] nMsh: 1
+[write_vtus:1] Dinit.size(): 0
+[write_vtus:1] 
+[write_vtus:1] lD0: 0
+[write_vtus:1] nOut: 2
+[write_vtus:1] outDof: 3
+[write_vtus:1] nOute: 0
+[write_vtus:0] 
+[write_vtus:0] Set eq outputs ...
+[write_vtus:0] cOut: 0
+[write_vtus:1] 
+[write_vtus:1] Set eq outputs ...
+[write_vtus:1] cOut: 0
+[write_vtus:0] 
+[write_vtus:0] Integrate data from all processors ... 
+[write_vtus:0] nOute: 0
+[write_vtus:0] ---------- iM: 0
+[int_msh_data:0] 
+[int_msh_data:0] ========== int_msh_data ==========
+[int_msh_data:0] nOute: 0
+[int_msh_data:0] outDof: 3
+[int_msh_data:0] d.x.size(): 233466
+[int_msh_data:0] com_mod.savedOnce: 1
+[int_msh_data:0] d.nNo: 160801
+[int_msh_data:0] d.nEl: 160000
+[int_msh_data:0] d.eNoN: 4
+[write_vtus:1] 
+[write_vtus:1] Integrate data from all processors ... 
+[write_vtus:1] nOute: 0
+[write_vtus:1] ---------- iM: 0
+[int_msh_data:1] 
+[int_msh_data:1] ========== int_msh_data ==========
+[int_msh_data:1] nOute: 0
+[int_msh_data:1] outDof: 3
+[int_msh_data:1] d.x.size(): 250632
+[int_msh_data:1] com_mod.savedOnce: 1
+[int_msh_data:1] d.nNo: 0
+[int_msh_data:1] d.nEl: 0
+[int_msh_data:1] d.eNoN: 4
+[int_msh_data:1] d.gx.size(): 0
+[int_msh_data:1] 0 m: 0
+[int_msh_data:1] d.xe.nrows_: 0
+[int_msh_data:1] d.xe.ncols_: 82822
+[int_msh_data:1] 1 m: 1
+[int_msh_data:1]  4 m: 0
+[int_msh_data:1] Done

@@ -3,14 +3,14 @@
 
 Continue previous simulation: f
 Number of spatial dimensions: 2
-Number of time steps: 10000
+Number of time steps: 100
 Time step size: 0.1
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM
 
 Save results to VTK format: 1
 Name prefix of saved VTK files: result
-Increment in saving VTK files: 10
+Increment in saving VTK files: 1
 Start saving after time step: 1
 
 Increment in saving restart files: 10

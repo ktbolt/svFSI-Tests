@@ -1,0 +1,25 @@
+
+
+=============================================== parallel ======================================
+
+./vtk-compare.sh 
+Read mesh 2-procs//result_099_cpp.vtu
+Read mesh 2-procs//result_099.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 1002001
+Mesh 2: Number of nodes: 1002001
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Action_potential   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min -84.0003  max 38.9818
+  Values 2: min -84.0003  max 38.9818
+  All data match.
+
+

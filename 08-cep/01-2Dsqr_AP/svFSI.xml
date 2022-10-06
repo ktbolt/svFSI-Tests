@@ -4,7 +4,8 @@
 <GeneralSimulationParameters>
   <Continue_previous_simulation> false </Continue_previous_simulation>
   <Number_of_spatial_dimensions> 2 </Number_of_spatial_dimensions> 
-  <Number_of_time_steps> 727 </Number_of_time_steps> 
+  <Number_of_time_steps> 10 </Number_of_time_steps> 
+  <!--Number_of_time_steps> 727 </Number_of_time_steps--> 
   <Time_step_size> 1.0 </Time_step_size> 
   <Spectral_radius_of_infinite_time_step> 0.50 </Spectral_radius_of_infinite_time_step> 
   <Searched_file_name_to_trigger_stop> STOP_SIM </Searched_file_name_to_trigger_stop> 
@@ -54,13 +55,13 @@
 
   <Domain id="1" >
      <Electrophysiology_model> AP </Electrophysiology_model>
-     <Conductivity> 1.0 </Conductivity>
+     <Isotropic_conductivity> 1.0 </Isotropic_conductivity>
      <ODE_solver> Euler </ODE_solver>
    </Domain>
   
    <Domain id="2" >
       <Electrophysiology_model> AP </Electrophysiology_model>
-      <Isotroptic_conductivity> 1.0 </Isotroptic_conductivity>
+      <Isotropic_conductivity> 1.0 </Isotropic_conductivity>
       <ODE_solver> Euler </ODE_solver>
       <Stimulus type="Istim" >
          <Amplitude> 10.0 </Amplitude>
