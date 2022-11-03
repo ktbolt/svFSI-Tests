@@ -1,0 +1,111 @@
+
+=====================================================================================
+               06-ustruct/01-block-compression/P2P1/h320MPa/N016
+=====================================================================================
+
+ - 10 node tets
+
+ - divergence is off because in div_post() it is computed as sF / sA but 
+   sF and sA don't exactly match Fortran
+   + sA [Differences] Max: 4.4505014656221270389e-15   
+   + sF [Differences] Max: 2.44140625000000797755e-14 
+
+
+ - Results don't match as well for parallel run with 4 procs.
+
+   + Displacement 
+     - serial  ts=1  1: min 0  max 0.0115472   2: min 0  max 0.0115472   diff: 8.66839e-09
+     - 4-procs ts=1  1: min 0  max 0.00858383  2: min 0  max 0.00952159  diff: 0.000937752 
+
+ - Fortan results are also differ between serial and MPI
+
+=========================================== serial ==================================
+ Read mesh 1-procs//result_001_cpp.vtu
+ Read mesh 1-procs//result_001.vtu
+ Tolerance: 1e-11
+
+ Data name: Displacement   Type: 11
+   Values 1: min 0  max 0.0115472
+   Values 2: min 0  max 0.0115472
+   **** Data does not match for 35936 entries. Max diff: 8.66839e-09
+
+ Data name: Stress   Type: 11
+   num_comp: 6
+   **** Data does not match for 35937 entries. Max diff: 1e-11
+
+ Data name: Velocity   Type: 11
+   num_comp: 3
+   Vector double nodal data
+   Values 1: min 0  max 0.00216509
+   Values 2: min 0  max 0.00216509
+   **** Data does not match for 35936 entries. Max diff: 1.62532e-09
+
+ Data name: Pressure   Type: 11
+   num_comp: 1
+   Scalar double nodal data
+   Values 1: min -625438  max 5.24939e+06
+   Values 2: min -625438  max 5.24939e+06
+   **** Data does not match for 35937 entries. Max diff: 8.85625
+
+ Data name: Divergence   Type: 11
+   Values 1: min -0.825892  max 0.791391
+   Values 2: min -0.825892  max 0.791391
+   **** Data does not match for 4098 entries. Max diff: 0.0963136
+
+
+=========================================== MPI 4 procs ==========================
+
+ - Displacement
+   ts=1  1: min 0  max 0.00858383  2: min 0  max 0.00952159  diff: 0.000937752
+   ts=2  1: min 0  max 0.0207704   2: min 0  max 0.0214914   diff: 0.000721038
+   ts=3  1: min 0  max 0.0308821   2: min 0  max 0.0304597   diff: 0.000422378
+ 
+ - Velocity  
+   ts=1  1: min 0  max 0.00160947   2: min 0  max 0.0017853     diff: 0.000175829
+   ts=2  1: min 0  max 0.000997405  2: min 0  max 0.000816345   diff: 0.000181297
+   ts=3  1: min 0  max 0.000956332  2: min 0  max 0.000870688   diff: 0.000149552
+
+ - Pressure   
+   ts=1  1: min -594754       max 5.26026e+06  2: min -603228       max 5.26026e+06  diff: 31727.5
+   ts=2  1: min -1.00053e+06  max 7.86664e+06  2: min -993111       max 7.86664e+06  diff:  8140.87
+   ts=3  1: min -1.44771e+06  max 1.17363e+07  2: min -1.44684e+06  max 1.17363e+07  diff:  10923.7
+
+ - Divergence 
+   ts=1  1: min -0.917097  max 0.946828  2: min -0.911752  max 0.946828  diff: 0.0620985
+   ts=2  1: min -0.376394  max 0.206509  2: min -0.380756  max 0.206509  diff: 0.0273228
+ 
+ 
+
+------------------------------------------- ts=1 ---------------------------------
+Read mesh 4-procs//result_001_cpp.vtu
+Read mesh 4-procs//result_001.vtu
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.00858383
+  Values 2: min 0  max 0.00952159
+  **** Data does not match for 35936 entries. Max diff: 0.000937752
+
+Data name: Stress   Type: 11
+  num_comp: 6
+  **** Data does not match for 35937 entries. Max diff: 1e-11
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.997596  max 1.00078
+  Values 2: min 0.997577  max 1.00078
+  **** Data does not match for 35937 entries. Max diff: 6.49598e-05
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 0.00160947
+  Values 2: min 0  max 0.0017853
+  **** Data does not match for 35936 entries. Max diff: 0.000175829
+
+Data name: Pressure   Type: 11
+  Values 1: min -594754  max 5.26026e+06
+  Values 2: min -603228  max 5.26026e+06
+  **** Data does not match for 35937 entries. Max diff: 31727.5
+
+Data name: Divergence   Type: 11
+  Values 1: min -0.917097  max 0.946828
+  Values 2: min -0.911752  max 0.946828
+  **** Data does not match for 35937 entries. Max diff: 0.0620985
+
