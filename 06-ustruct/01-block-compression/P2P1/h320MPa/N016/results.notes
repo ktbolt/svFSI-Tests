@@ -10,6 +10,7 @@
    + sA [Differences] Max: 4.4505014656221270389e-15   
    + sF [Differences] Max: 2.44140625000000797755e-14 
 
+ - results match well for serial run
 
  - Results don't match as well for parallel run with 4 procs.
 
