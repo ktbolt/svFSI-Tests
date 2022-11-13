@@ -62,3 +62,943 @@
  Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
 ---------------------------------------------------------------------
  New time step size: 1.000E-2
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.6619  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  84]
+ NS     1-2  1.61E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  77]
+ NS     1-3  2.43E1  [ -73 2.05E-4 2.05E-4 5.19E-4]  [   6  -10  82]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  8.6970  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  8.7109  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+ NS     1-2  1.49E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  84]
+ NS     1-3  2.21E1  [ -73 2.05E-4 2.05E-4 5.19E-4]  [   6  -10  86]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.4649  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  88]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.0770  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+ NS     1-2  1.57E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  84]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  1.05E1  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  91]
+ NS     1-2  1.76E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  85]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.3380  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+ NS     1-2  1.62E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  85]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.8719  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+ NS     1-2  1.62E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  84]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  9.7620  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  89]
+ NS     1-2  1.68E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  86]
+ NS     1-3  2.53E1  [ -73 2.05E-4 2.05E-4 5.19E-4]  [   6  -10  87]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-24-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 2
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: mesh/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <mesh/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Number of available faces: 5
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/inlet.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/outlet.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <mesh/mesh-surfaces/wall.vtp>
+ Number of nodes: 41023
+ Number of elements: 40490
+ Mesh data imported successfully
+ Domain size X: 0.000000 3.0000E1
+ Domain size Y: 0.000000 1.0000E1
+ Number of equations: 1
+ Using linear solver: BIPN
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <fluid>: 4
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 366009
+ Eq. <NS>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ NS     1-1  8.7280  [   0 1.00000 1.00000 4.99E-4]  [   8  -12  92]
+ NS     1-2  1.46E1  [ -27 4.42E-2 4.42E-2 6.37E-4]  [   5   -9  89]
+ NS     1-3  2.22E1  [ -73 2.05E-4 2.05E-4 5.19E-4]  [   6  -10  91]

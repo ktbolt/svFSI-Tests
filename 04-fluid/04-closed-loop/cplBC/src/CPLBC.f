@@ -202,6 +202,7 @@
 !-----------------------------------------------------------------------
       SUBROUTINE WRITECOMM()
       IMPLICIT NONE
+      INTEGER i, j, k, n, nFaces, nX, nXprnt, nTimeSteps, fid, istat
 
 !     Writing the data required by the 3D domain
       OPEN(fid,FILE=cplBC_commu_name,STATUS='OLD',FORM='UNFORMATTED')

@@ -5,3 +5,11 @@ obj
 *.ini
 run-fsi.sh
 *.log
+cout
+fout
+b_compare-files.sh
+vtk-compare.sh
+*.vtu
+*.bin
+.DS_Store
+histor.dat

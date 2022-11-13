@@ -1,0 +1,30 @@
+
+ - results match exactly
+
+=========================================== serial =============================
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.309548
+  Values 2: min 0  max 0.309548
+  All data match.
+
+=========================================== mpi =============================
+
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.309548
+  Values 2: min 0  max 0.309548
+  All data match.
+
+
+

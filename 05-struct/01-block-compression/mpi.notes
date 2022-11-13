@@ -1,0 +1,17 @@
+
+ - MPI fails
+
+   int Ec = lFa.gE(e);
+
+   [gnnb:0] Error: Ec 98308 >= 98308
+   [gnnb:0]   e: 901
+   [gnnb:0]   a: 1
+
+
+ - problem in part_face() 
+
+   face name: Y0
+
+   + lFa.IEN() differ 
+
+

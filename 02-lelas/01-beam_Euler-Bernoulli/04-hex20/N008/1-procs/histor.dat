@@ -167,3 +167,1192 @@
  LE    98-1  5.41E2  [   0 1.00000 8.61E-8 7.21E-4]  [   5  -72  89]
  LE    99-1  5.42E2  [   0 1.00000 8.37E-8 9.61E-4]  [   4  -69  89]
  LE   100-1s 5.44E2  [   0 1.00000 8.39E-8 8.41E-4]  [   4  -71  89]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ LE     1-1  1.22E1  [   0 1.00000 1.00000 1.79E-1]  !5100    0  99!
+ LE     1-2  2.47E1  [ -14 1.79E-1 1.79E-1 9.07E-1]  !5100    0  99!
+ LE     1-3  3.76E1  [ -15 1.62E-1 1.62E-1 9.59E-1]  !5100    0  99!
+ LE     1-4  5.02E1  [ -16 1.56E-1 1.56E-1 9.74E-1]  !5100    0  99!
+ LE     1-5  6.26E1  [ -16 1.52E-1 1.52E-1 9.78E-1]  !5100    0  99!
+ LE     1-6  7.50E1  [ -16 1.49E-1 1.49E-1 9.79E-1]  !5100    0  99!
+ LE     1-7  8.71E1  [ -16 1.46E-1 1.46E-1 9.80E-1]  !5100    0  99!
+ LE     1-8  9.92E1  [ -16 1.43E-1 1.43E-1 9.80E-1]  !5100    0  99!
+ LE     1-9  1.11E2  [ -17 1.40E-1 1.40E-1 9.80E-1]  !5100    0  99!
+ LE     1-10s 1.23E2  [ -17 1.37E-1 1.37E-1 9.80E-1]  !5100    0  99!
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ LE     1-1  1.25E1  [   0 1.00000 1.00000 1.79E-1]  !5100    0  99!
+ LE     1-2  2.51E1  [ -14 1.79E-1 1.79E-1 9.07E-1]  !5100    0  99!
+ LE     1-3  3.72E1  [ -15 1.62E-1 1.62E-1 9.59E-1]  !5100    0  99!
+ LE     1-4  4.96E1  [ -16 1.56E-1 1.56E-1 9.74E-1]  !5100    0  99!
+ LE     1-5  6.12E1  [ -16 1.52E-1 1.52E-1 9.78E-1]  !5100    0  99!
+ LE     1-6  7.29E1  [ -16 1.49E-1 1.49E-1 9.79E-1]  !5100    0  99!
+ LE     1-7  8.52E1  [ -16 1.46E-1 1.46E-1 9.80E-1]  !5100    0  99!
+ LE     1-8  9.71E1  [ -16 1.43E-1 1.43E-1 9.80E-1]  !5100    0  99!
+ LE     1-9  1.09E2  [ -17 1.40E-1 1.40E-1 9.80E-1]  !5100    0  99!
+ LE     1-10s 1.21E2  [ -17 1.37E-1 1.37E-1 9.80E-1]  !5100    0  99!
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 10-12-2022
+
+ Running sequentially
+[READFILES] Number of processors: 1
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 1
+ Number of meshes: 1
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/04-hex20/N008/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+[CHECKIEN]
+[CHECKIEN] ========== CHECKIEN ==========
+ Checking IEN array structure for mesh <msh>
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/04-hex20/N008/mesh-surfaces/back.vtp>
+ Number of nodes: 5121
+ Number of elements: 1024
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: FSILS
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ Total number of non-zeros in the LHS matrix: 254913
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ LE     1-1  1.18E1  [   0 1.00000 1.00000 1.79E-1]  !5100    0  98!
+ LE     1-2  2.43E1  [ -14 1.79E-1 1.79E-1 9.07E-1]  !5100    0  96!
+ LE     1-3  3.75E1  [ -15 1.62E-1 1.62E-1 9.59E-1]  !5100    0  96!
+ LE     1-4  5.21E1  [ -16 1.56E-1 1.56E-1 9.74E-1]  !5100    0  96!
+ LE     1-5  6.49E1  [ -16 1.52E-1 1.52E-1 9.78E-1]  !5100    0  96!
+ LE     1-6  7.82E1  [ -16 1.49E-1 1.49E-1 9.79E-1]  !5100    0  96!
+ LE     1-7  9.15E1  [ -16 1.46E-1 1.46E-1 9.80E-1]  !5100    0  96!
+ LE     1-8  1.04E2  [ -16 1.43E-1 1.43E-1 9.80E-1]  !5100    0  96!
+ LE     1-9  1.18E2  [ -17 1.40E-1 1.40E-1 9.80E-1]  !5100    0  96!
+ LE     1-10s 1.30E2  [ -17 1.37E-1 1.37E-1 9.80E-1]  !5100    0  96!

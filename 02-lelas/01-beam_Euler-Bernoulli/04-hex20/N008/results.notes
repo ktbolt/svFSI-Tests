@@ -1,0 +1,49 @@
+
+ LE 1-1  2.100e+01  [0 1.000e+00 1.000e+00 1.796e-01]  !5100 0 100!
+ LE 1-2  4.100e+01  [-14 1.796e-01 1.796e-01 9.070e-01]  !5100 0 100!
+ LE 1-3  6.100e+01  [-15 1.629e-01 1.629e-01 9.597e-01]  !5100 0 95!
+ LE 1-4  8.100e+01  [-16 1.564e-01 1.564e-01 9.749e-01]  !5100 0 100!
+ LE 1-5  1.000e+02  [-16 1.524e-01 1.524e-01 9.788e-01]  !5100 0 100!
+ LE 1-6  1.200e+02  [-16 1.492e-01 1.492e-01 9.798e-01]  !5100 0 95!
+ LE 1-7  1.400e+02  [-16 1.462e-01 1.462e-01 9.800e-01]  !5100 0 100!
+ LE 1-8  1.590e+02  [-16 1.433e-01 1.433e-01 9.801e-01]  !5100 0 100!
+
+============================================== serial ==============================
+Read mesh 1-procs//result_001_cpp.vtu
+Read mesh 1-procs//result_001.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 5121
+Mesh 2: Number of nodes: 5121
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.00305793
+  Values 2: min 0  max 0.00305855
+  **** Data does not match for 4896 entries. Max diff: 6.12159e-07
+
+============================================== mpi ==============================
+
+/vtk-compare.sh 
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+Tolerance: 1e-11
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.093366
+  Values 2: min 0  max 0.0933697
+  **** Data does not match for 4896 entries. Max diff: 3.65895e-06
+
+
+

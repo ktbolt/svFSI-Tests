@@ -1,16 +1,17 @@
 #----------------------------------------------------------------
 # General simulation parameters
 
-Continue previous simulation: 1
+Continue previous simulation: 0
+#Continue previous simulation: 1
 Number of spatial dimensions: 3
-Number of time steps: 20000
+Number of time steps: 100
 Time step size: 0.05
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM
 
 Save results to VTK format: 1
 Name prefix of saved VTK files: result
-Increment in saving VTK files: 50
+Increment in saving VTK files: 10
 Start saving after time step: 1
 
 Increment in saving restart files: 1000

@@ -3,14 +3,15 @@
 
 Continue previous simulation: 0
 Number of spatial dimensions: 3
-Number of time steps: 100
+#Number of time steps: 4
+Number of time steps: 50
 Time step size: 0.01
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM
 
 Save results to VTK format: 1
 Name prefix of saved VTK files: result
-Increment in saving VTK files: 100
+Increment in saving VTK files: 10
 Start saving after time step: 1
 
 Increment in saving restart files: 100
@@ -78,6 +79,7 @@ Add equation: struct {
       Stress: t
       Strain: t
       Cauchy_stress: t
+      Def_grad: t
       VonMises_stress: t
    }
 

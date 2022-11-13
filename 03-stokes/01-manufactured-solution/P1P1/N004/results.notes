@@ -1,0 +1,24 @@
+
+- results match very well
+
+================================================== mpi ========================================
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  **** Data does not match for 25 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -9.69784  max 6.52106
+  Values 2: min -9.69784  max 6.52106
+  **** Data does not match for 25 entries. Max diff: 3.7425e-10
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 3.56689
+  Values 2: min 0  max 3.56689
+  All data match.
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 25 entries. Max diff: 1e-11

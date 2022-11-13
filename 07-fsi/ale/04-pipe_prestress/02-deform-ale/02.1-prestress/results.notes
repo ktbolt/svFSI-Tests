@@ -1,0 +1,16 @@
+
+==================================================== mpi ====================================
+Read mesh 2-procs//result_100_cpp.vtu
+Read mesh 2-procs//result_100.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.000362484
+  Values 2: min 0  max 0.000362471
+  **** Data does not match for 8158 entries. Max diff: 3.51967e-07
+
+Data name: Stress   Type: 11
+  num_comp: 6
+  **** Data does not match for 8365 entries. Max diff: 1e-11
+
+

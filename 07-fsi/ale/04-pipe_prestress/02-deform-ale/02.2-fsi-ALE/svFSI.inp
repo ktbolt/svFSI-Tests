@@ -4,7 +4,7 @@
 Continue previous simulation: 0
 #Continue previous simulation: 1
 Number of spatial dimensions: 3
-Number of time steps: 4
+Number of time steps: 1
 #Number of time steps: 3000
 Time step size: 0.001
 Spectral radius of infinite time step: 0.50

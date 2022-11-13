@@ -3,14 +3,14 @@
 
 Continue previous simulation: 0
 Number of spatial dimensions: 2
-Number of time steps: 10000
+Number of time steps: 4
 Time step size: 1e-3
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM
 
 Save results to VTK format: 1
 Name prefix of saved VTK files: result
-Increment in saving VTK files: 10
+Increment in saving VTK files: 1
 Start saving after time step: 1
 
 Increment in saving restart files: 10
@@ -90,11 +90,11 @@ Add equation: FSI {
       ## Continuity stabilization coefficient: 0.0
    }
 
-   LS type: BICG {
-      #Preconditioner: Trilinos-ILUT
+   LS type: GMRES {
+      Preconditioner: Trilinos-ILUT
       Tolerance: 1e-6
       Max iterations: 100
-      #Krylov space dimension: 50
+      Krylov space dimension: 50
    }
 
    Output: Spatial {

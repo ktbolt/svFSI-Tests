@@ -1,0 +1,30 @@
+
+- results match very well
+
+======================================================== mpi ======================================
+
+./vtk-compare.sh 
+Read mesh 2-procs//result_100_cpp.vtu
+Read mesh 2-procs//result_100.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 10201
+Mesh 2: Number of nodes: 10201
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Temperature   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 0  max 10
+  Values 2: min 0  max 10
+  All data match.
+
+Data name: Heat_flux   Type: 11
+  num_comp: 2
+  **** Data does not match for 10201 entries. Max diff: 1e-11
+
+

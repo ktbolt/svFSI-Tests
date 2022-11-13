@@ -1,0 +1,52 @@
+
+ - results match very well
+
+ FS 1-1  1.700e+01  [0 1.000e+00 1.000e+00 9.782e-05]  [380 -9 65]
+ FS 1-2  4.400e+01  [-41 8.590e-03 8.590e-03 9.857e-05]  [434 -5 75]
+ FS 1-3  6.500e+01  [-68 3.844e-04 3.844e-04 9.993e-05]  [363 0 67]
+ FS 1-4  8.600e+01  [-97 1.324e-05 1.324e-05 9.912e-05]  [370 -1 67]
+ FS 2-1  1.120e+02  [0 1.000e+00 1.311e+00 9.878e-05]  [407 -9 67]
+ FS 2-2  1.310e+02  [-26 4.480e-02 5.874e-02 9.884e-05]  [233 -3 47]
+ FS 2-3  1.500e+02  [-61 8.569e-04 1.123e-03 9.952e-05]  [332 -2 65]
+ FS 2-4  1.740e+02  [-87 4.373e-05 5.734e-05 9.876e-05]  [326 -3 65]
+
+ MS 1-1  2.000e+01  [0 1.000e+00 1.000e+00 9.657e-05]  [63 -1 0]
+ MS 1-2  4.700e+01  [-37 1.291e-02 1.291e-02 9.658e-05]  [69 -1 0]
+ MS 1-3  6.800e+01  [-68 3.941e-04 3.941e-04 9.550e-05]  [61 -1 33]
+ MS 1-4s 8.800e+01  [-102 7.211e-06 7.211e-06 9.438e-05]  [69 -1 0]
+ MS 2-1  1.160e+02  [0 1.000e+00 8.763e-01 9.115e-05]  [59 -1 25]
+ MS 2-2  1.330e+02  [-37 1.267e-02 1.110e-02 9.636e-05]  [63 -1 0]
+ MS 2-3  1.540e+02  [-67 4.240e-04 3.715e-04 9.542e-05]  [63 -1 25]
+ MS 2-4s 1.770e+02  [-97 1.320e-05 1.156e-05 9.171e-05]  [67 -1 33]
+
+================================================= mpi ====================================
+Read mesh 2-procs//result_002_cpp.vtu
+Read mesh 2-procs//result_002.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 44.2748
+  Values 2: min 0  max 44.2748
+  **** Data does not match for 7 entries. Max diff: 1.54117e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min 0  max 68620.9
+  Values 2: min 0  max 68620.9
+  **** Data does not match for 33973 entries. Max diff: 4.42378e-09
+
+Data name: FS_Displacement   Type: 11
+  Values 1: min 0  max 0.0589166
+  Values 2: min 0  max 0.0589166
+  All data match.
+
+Data name: WSS   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 32.6868
+  Values 2: min 0  max 32.6868
+  All data match.
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0236887
+  Values 2: min 0  max 0.0236887
+  All data match.

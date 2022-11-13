@@ -1,0 +1,76 @@
+
+- results match very well
+
+ NS 1-1  1.000e+00  [0 1.000e+00 1.000e+00 9.950e-07]  [423 -2 0]
+ NS 1-2  1.000e+00  [-37 1.305e-02 1.305e-02 9.989e-07]  [320 -2 0]
+ NS 1-3  2.000e+00  [-59 1.079e-03 1.079e-03 9.887e-07]  [380 -3 100]
+ NS 1-4  2.000e+00  [-83 6.814e-05 6.814e-05 9.848e-07]  [297 -8 0]
+ NS 1-5  2.000e+00  [-106 4.959e-06 4.959e-06 8.785e-06]  [178 -5 0]
+ NS 1-6  2.000e+00  [-129 3.503e-07 3.503e-07 1.182e-04]  [92 -19 0]
+ NS 2-1  3.000e+00  [0 1.000e+00 3.496e-01 9.903e-07]  [470 -2 100]
+ NS 2-2  3.000e+00  [-32 2.240e-02 7.830e-03 9.792e-07]  [386 -5 0]
+ NS 2-3  3.000e+00  [-53 2.032e-03 7.103e-04 9.897e-07]  [411 0 0]
+ NS 2-4  4.000e+00  [-76 1.498e-04 5.236e-05 9.779e-07]  [308 0 100]
+ NS 2-5  4.000e+00  [-97 1.308e-05 4.573e-06 9.446e-06]  [213 -2 0]
+ NS 2-6  4.000e+00  [-119 1.022e-06 3.573e-07 1.174e-04]  [99 -24 0]
+
+============================================== serial =================================
+Read mesh 1-procs//result_001_cpp.vtu
+Read mesh 1-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -0.948703  max 1.26077
+  Values 2: min -0.948703  max 1.26077
+  All data match.
+
+Data name: Vorticity   Type: 11
+  Values 1: min nan  max nan
+  Values 2: min 3.75788e-11  max 225.237
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+
+============================================== MPI =================================
+
+------------------------------ ts=9 ---------------------------
+Read mesh 4-procs//result_009_cpp.vtu
+Read mesh 4-procs//result_009.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -0.349956  max 1.02016
+  Values 2: min -0.349956  max 1.02016
+  All data match.
+
+Data name: Vorticity   Type: 11
+  Values 1: min nan  max nan
+  Values 2: min 1.05625e-07  max 231.854
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+------------------------------ ts=90 ---------------------------
+Read mesh 4-procs//result_090_cpp.vtu
+Read mesh 4-procs//result_090.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -0.331359  max 1.1808
+  Values 2: min -0.331359  max 1.1808
+  All data match.
+
+Data name: Vorticity   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min nan  max nan
+  Values 2: min 6.87125e-06  max 231.837
+  **** Data does not match for 4225 entries. Max diff: 1e-11

@@ -1,0 +1,34 @@
+
+ - results match very well
+
+ - trilinos results match very well
+
+=========================================================== mpi ==================================
+Read mesh 2-procs//result_001_cpp.vtu
+Read mesh 2-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 1.3542e-09  max 36.3623
+  Values 2: min 1.35423e-09  max 36.3623
+  All data match.
+
+Data name: Pressure   Type: 11
+  Values 1: min -1.3697e-06  max 76737.5
+  Values 2: min -1.36968e-06  max 76737.5
+  **** Data does not match for 35938 entries. Max diff: 2.44623e-10
+
+Data name: FS_Displacement   Type: 11
+  Values 1: min 6.91208e-14  max 0.00185599
+  Values 2: min 6.9122e-14  max 0.00185599
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 0  max 21655.5
+  Values 2: min 0  max 21655.5
+  **** Data does not match for 21125 entries. Max diff: 1.52105e-09
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.000698648
+  Values 2: min 0  max 0.000698648
+  All data match.

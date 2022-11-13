@@ -1,0 +1,71 @@
+
+ - results are off a bit for pressure in early time steps
+   but then converges nice to exact match
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -13.1227  max 14.7196
+  Values 2: min -13.0657  max 14.7196
+  **** Data does not match for 1089 entries. Max diff: 2.5017
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+-------------------------------------------------- ts=50 --------------------------------------
+Read mesh 1-procs//result_050_cpp.vtu
+Read mesh 1-procs//result_050.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -13.0335  max 12.8957
+  Values 2: min -13.0335  max 12.8957
+  **** Data does not match for 1043 entries. Max diff: 1.89246e-09
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+
+===================================================== mpi ==================================
+
+-------------------------------------------------- ts=50 --------------------------------------
+Read mesh 4-procs//result_050_cpp.vtu
+Read mesh 4-procs//result_050.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 1089
+Mesh 2: Number of nodes: 1089
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -13.0335  max 12.8957
+  Values 2: min -13.0335  max 12.8957
+  **** Data does not match for 1085 entries. Max diff: 4.00283e-09
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+

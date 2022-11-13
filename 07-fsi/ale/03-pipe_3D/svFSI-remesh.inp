@@ -3,7 +3,7 @@
 
 Continue previous simulation: 0
 Number of spatial dimensions: 3
-Number of time steps: 80
+Number of time steps: 1
 Time step size: 1e-4
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM
@@ -16,6 +16,8 @@ Start saving after time step: 1
 Increment in saving restart files: 1
 Convert BIN to VTK format: 0
 
+Simulation requires remeshing: 1
+
 Verbose: 1
 Warning: 0
 Debug: 0
@@ -24,21 +26,18 @@ Debug: 0
 # Mesh data
 Add mesh: lumen {
 
-   Mesh file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-mesh.vtu
+   Mesh file path: mesh/lumen/mesh-complete.mesh.vtu
 
    Add face: lumen_inlet {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-inflow.vtp
-      #Face file path: mesh/lumen/mesh-surfaces/lumen_inlet.vtp
+      Face file path: mesh/lumen/mesh-surfaces/lumen_inlet.vtp
    }
 
    Add face: lumen_outlet {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-outlet.vtp 
-      #Face file path: mesh/lumen/mesh-surfaces/lumen_outlet.vtp
+      Face file path: mesh/lumen/mesh-surfaces/lumen_outlet.vtp
    }
 
    Add face: lumen_wall {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/fluid-wall.vtp 
-      #Face file path: mesh/lumen/mesh-surfaces/lumen_wall.vtp
+      Face file path: mesh/lumen/mesh-surfaces/lumen_wall.vtp
    }
 
    Domain: 0
@@ -46,27 +45,22 @@ Add mesh: lumen {
 
 Add mesh: wall {
 
-   Mesh file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-mesh.vtu 
-   #Mesh file path: mesh/wall/mesh-complete.mesh.vtu
+   Mesh file path: mesh/wall/mesh-complete.mesh.vtu
 
    Add face: wall_inlet {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-inflow.vtp
-      #Face file path: mesh/wall/mesh-surfaces/wall_inlet.vtp
+      Face file path: mesh/wall/mesh-surfaces/wall_inlet.vtp
    }
 
    Add face: wall_outlet {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-outlet.vtp
-      #Face file path: mesh/wall/mesh-surfaces/wall_outlet.vtp
+      Face file path: mesh/wall/mesh-surfaces/wall_outlet.vtp
    }
 
    Add face: wall_inner {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-wall-inner.vtp
-      #Face file path: mesh/wall/mesh-surfaces/wall_inner.vtp
+      Face file path: mesh/wall/mesh-surfaces/wall_inner.vtp
    }
 
    Add face: wall_outer {
-      Face file path: /Users/parkerda/software/ktbolt/cardiovascular/create-fsi-mesh-complete/python/solid-wall-outer.vtp
-      #Face file path: mesh/wall/mesh-surfaces/wall_outer.vtp
+      Face file path: mesh/wall/mesh-surfaces/wall_outer.vtp
    }
 
    Domain: 1
@@ -106,6 +100,15 @@ Add equation: FSI {
       ## Continuity stabilization coefficient: 0.0
    }
 
+   Remesher: Tetgen {
+      Max edge size: lumen  {val: 0.7}
+      Max edge size: wall {val: 0.5}
+      Min dihedral angle:    10
+      Max radius ratio:        1.1
+      Remesh frequency:   1000
+      Frequency for copying data:   5
+   }
+
    LS type: GMRES {
       #Preconditioner: Trilinos-ILUT
       Tolerance: 1e-6
@@ -117,6 +120,7 @@ Add equation: FSI {
       Displacement: t
       Velocity: t
       Pressure: t
+      VonMises_stress: t
    }
 
    Output: Alias {

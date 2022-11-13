@@ -1,0 +1,66 @@
+
+- the simulation is initialized from the last simultion results
+
+  + Initializing from 2-procs/stFile_last.bin
+
+- results match very well
+
+========================================== serial ===================================================
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Initial_displacement   Type: 11
+  Values 1: min 0  max 0.309851
+  Values 2: min 0  max 0.309851
+  All data match.
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 16.2275
+  Values 2: min 0  max 16.2275
+  **** Data does not match for 242 entries. Max diff: 2.50199e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min 74154.8  max 79331.7
+  Values 2: min 74154.8  max 79331.7
+  **** Data does not match for 30021 entries. Max diff: 4.904e-09
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 5.80108
+  Values 2: min 0  max 5.80108
+  **** Data does not match for 110 entries. Max diff: 1.81831e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.303452
+  Values 2: min 0  max 0.303452
+  All data match.
+
+========================================== mpi ===================================================
+Read mesh 2-procs//result_009_cpp.vtu
+Read mesh 2-procs//result_009.vtu
+Tolerance: 1e-11
+
+Data name: Initial_displacement   Type: 11
+  Values 1: min 0  max 0.309851
+  Values 2: min 0  max 0.309851
+  All data match.
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 16.379
+  Values 2: min 0  max 16.379
+  **** Data does not match for 33 entries. Max diff: 1.32965e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min 74562  max 79631.6
+  Values 2: min 74562  max 79631.6
+  **** Data does not match for 30053 entries. Max diff: 3.94357e-09
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 8.55059
+  Values 2: min 0  max 8.55059
+  All data match.
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.3057
+  Values 2: min 0  max 0.3057
+  All data match.

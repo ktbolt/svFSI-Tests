@@ -1,0 +1,79 @@
+
+==========================================================================================
+                      06-ustruct/02-tensile-adventitia_HGO
+==========================================================================================
+
+ - 8-node bricks
+
+ - serial results match fine
+   + Values 1: min 0  max 3.61691e-06
+   + Values 2: min 0  max 3.62635e-06
+   + **** Data does not match for 18642 entries. Max diff: 1.07672e-08
+
+   + lots of iterations
+     ST 1-1  3.800e+01  [0 1.000e+00 1.000e+00 6.305e-02]  !5100 0 97!
+     ST 1-2  7.700e+01  [-24 6.305e-02 6.305e-02 9.853e-01]  !5100 0 95!
+     ST 1-3  1.230e+02  [-24 6.213e-02 6.213e-02 9.873e-01]  !5100 0 96!
+     ST 1-4  1.630e+02  [-24 6.134e-02 6.134e-02 9.907e-01]  !5100 0 95!
+     ST 1-5  2.020e+02  [-24 6.077e-02 6.077e-02 9.900e-01]  !5100 0 95!
+     ST 1-6  2.410e+02  [-24 6.017e-02 6.017e-02 9.900e-01]  !5100 0 95!
+     ST 1-7  2.820e+02  [-24 5.957e-02 5.957e-02 9.973e-01]  !5100 0 95!
+     ST 1-8  3.240e+02  [-24 5.941e-02 5.941e-02 9.979e-01]  !5100 0 95!
+     ST 1-9  3.630e+02  [-24 5.928e-02 5.928e-02 9.985e-01]  !5100 0 95!
+     ST 1-10s 4.020e+02  [-24 5.919e-02 5.919e-02 9.987e-01]  !5100 0 95!
+
+ - triinos results match fine
+
+   + a lot fewer iterations
+     ST 1-1  6.000e+00  [0 1.000e+00 1.000e+00 7.122e-07]  [32 -142 42]
+     ST 1-2  1.100e+01  [-88 3.612e-05 3.612e-05 7.945e-07]  [38 -140 53]
+     ST 1-3s 1.700e+01  [-195 1.748e-10 1.748e-10 7.453e-07]  [39 -141 45]
+
+
+============================================== serial =======================================
+Read mesh 1-procs//result_001_cpp.vtu
+Read mesh 1-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 3.61691e-06
+  Values 2: min 0  max 3.62635e-06
+  **** Data does not match for 18642 entries. Max diff: 1.07672e-08
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 4.4242e-05  max 2.72221
+  Values 2: min 4.58556e-05  max 2.72221
+  **** Data does not match for 18786 entries. Max diff: 0.00461633
+
+Data name: Stress   Type: 11
+  num_comp: 6
+  **** Data does not match for 18786 entries. Max diff: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 0.0678171
+  Values 2: min 0  max 0.0679941
+  **** Data does not match for 18785 entries. Max diff: 0.000201885
+
+
+============================================== MPI =======================================
+Read mesh 4-procs//result_001_cpp.vtu
+Read mesh 4-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 3.20232e-06
+  Values 2: min 0  max 3.18146e-06
+  **** Data does not match for 18727 entries. Max diff: 2.41135e-08
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 3.10407e-05  max 2.50964
+  Values 2: min 3.90103e-05  max 2.50964
+  **** Data does not match for 18786 entries. Max diff: 0.00945455
+
+Data name: Stress   Type: 11
+  **** Data does not match for 18786 entries. Max diff: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 0.0600435
+  Values 2: min 0  max 0.0596524
+  **** Data does not match for 18785 entries. Max diff: 0.000452129

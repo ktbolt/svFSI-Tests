@@ -1,0 +1,33 @@
+
+
+ NS 1-1  6.000e+00  [0 1.000e+00 1.000e+00 3.692e-04]  [5 -16 67]
+ NS 1-2  1.100e+01  [-62 7.921e-04 7.921e-04 3.602e-04]  [4 -15 60]
+ NS 1-3s 1.700e+01  [-128 3.798e-07 3.798e-07 5.881e-04]  [4 -16 33]
+ NS 2-1  2.200e+01  [0 1.000e+00 3.552e+01 5.392e-04]  [3 -16 40]
+ NS 2-2  2.800e+01  [-65 5.446e-04 1.935e-02 5.009e-04]  [4 -18 50]
+ NS 2-3s 3.300e+01  [-128 3.757e-07 1.335e-05 3.265e-04]  [4 -17 40]
+
+================================================================================================================
+  800 time steps, 4 processors
+================================================================================================================
+
+./vtk-compare.sh 
+Read mesh 4-procs//result_800_cpp.vtu
+Read mesh 4-procs-fortran//result_800.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 30211
+Mesh 2: Number of nodes: 30211
+All coordinates match.
+
+Velocity   
+  Values 1: min 0  max 8.19306
+  Values 2: min 0  max 8.19306
+  **** Data does not match for 25046 entries. Max diff: 2.32048e-09
+
+Pressure   
+  Values 1: min -1.7497  max 153.231
+  Values 2: min -1.7497  max 153.231
+  **** Data does not match for 30197 entries. Max diff: 6.43693e-08
+

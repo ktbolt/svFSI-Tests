@@ -1,0 +1,53 @@
+
+ - results match very well
+
+========================================= serial ===============================
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 0.417947
+  Values 2: min 0  max 0.417947
+  **** Data does not match for 22 entries. Max diff: 3.42541e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min 1938.32  max 2472.34
+  Values 2: min 1938.32  max 2472.34
+  **** Data does not match for 30211 entries. Max diff: 1.91872e-08
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 0.202795
+  Values 2: min 0  max 0.202795
+  **** Data does not match for 1 entries. Max diff: 1.40043e-11
+
+Data name: Traction   Type: 11
+  Values 1: min 0  max 2469.79
+  Values 2: min 0  max 2469.79
+  **** Data does not match for 6225 entries. Max diff: 1.90184e-08
+
+
+========================================= mpi ===============================
+Read mesh 4-procs//result_010_cpp.vtu
+Read mesh 4-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 0.417947
+  Values 2: min 0  max 0.417947
+  **** Data does not match for 154 entries. Max diff: 1.12581e-10
+
+Data name: Pressure   Type: 11
+  Values 1: min 1938.32  max 2472.34
+  Values 2: min 1938.32  max 2472.34
+  **** Data does not match for 30211 entries. Max diff: 8.46921e-09
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 0.202795
+  Values 2: min 0  max 0.202795
+  **** Data does not match for 46 entries. Max diff: 2.98846e-11
+
+Data name: Traction   Type: 11
+  Values 1: min 0  max 2469.79
+  Values 2: min 0  max 2469.79
+  **** Data does not match for 4719 entries. Max diff: 7.92365e-09

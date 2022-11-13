@@ -1,0 +1,40 @@
+
+ - results match exactly 
+
+============================================== serial ====================================
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.000480395
+  Values 2: min 0  max 0.000480395
+  All data match.
+Read mesh 4-procs//result_010_cpp.vtu
+Read mesh 4-procs//result_010.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 4148
+Mesh 2: Number of nodes: 4148
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.000480395
+  Values 2: min 0  max 0.000480395
+  All data match.
+
+============================================== mpi ====================================
+Read mesh 4-procs//result_010_cpp.vtu
+Read mesh 4-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.000480395
+  Values 2: min 0  max 0.000480395
+  All data match.

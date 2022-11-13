@@ -1,0 +1,65 @@
+ - serial results match very well
+
+ - mpi results match very well
+
+=============================================== serial ========================================
+
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -14.2991  max 13.7865
+  Values 2: min -14.2991  max 13.7865
+  **** Data does not match for 1063 entries. Max diff: 1.19369e-09
+
+Data name: WSS   Type: 11
+  Values 1: min 0  max 5.39537
+  Values 2: min 0  max 5.39537
+  **** Data does not match for 3 entries. Max diff: 2.29352e-11
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+=============================================== mpi ========================================
+
+
+
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 1089
+Mesh 2: Number of nodes: 1089
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min -14.2991  max 13.7865
+  Values 2: min -14.2991  max 13.7865
+  **** Data does not match for 1046 entries. Max diff: 1.29368e-09
+
+Data name: WSS   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 5.39537
+  Values 2: min 0  max 5.39537
+  **** Data does not match for 34 entries. Max diff: 1.78313e-11
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 1089 entries. Max diff: 1e-11

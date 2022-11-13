@@ -1,0 +1,36 @@
+
+- results match very well
+
+================================================ MPI =================================
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 42
+Mesh 2: Number of nodes: 42
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.0128831
+  Values 2: min 0  max 0.0128831
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 5.42992e+06  max 1.13766e+08
+  Values 2: min 5.42992e+06  max 1.13766e+08
+  **** Data does not match for 42 entries. Max diff: 0.0100392
+
+Data name: Jacobian   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 0.999715  max 1.00019
+  Values 2: min 0.999715  max 1.00019
+  All data match.

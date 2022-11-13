@@ -1,0 +1,39 @@
+
+ - results match very well
+
+======================================= MPI ==========================================
+Read mesh 4-procs//result_009_cpp.vtu
+Read mesh 4-procs//result_009.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 1.29761
+  Values 2: min 0  max 1.29761
+  **** Data does not match for 9039 entries. Max diff: 9.67303e-09
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 1167.85  max 3808
+  Values 2: min 1167.85  max 3808
+  **** Data does not match for 9385 entries. Max diff: 1.79797e-05
+
+Data name: Cauchy_stress   Type: 11
+  num_comp: 6
+  **** Data does not match for 9385 entries. Max diff: 1e-11
+
+Data name: Strain   Type: 11
+  num_comp: 6
+  **** Data does not match for 9385 entries. Max diff: 1e-11
+
+Data name: Velocity   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 31.6968
+  Values 2: min 0  max 31.6968
+  **** Data does not match for 9039 entries. Max diff: 1.7563e-06
+
+Data name: Pressure   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min -3323.37  max 2696.61
+  Values 2: min -3323.37  max 2696.61
+  **** Data does not match for 9385 entries. Max diff: 4.77262e-05

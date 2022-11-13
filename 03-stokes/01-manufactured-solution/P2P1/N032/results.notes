@@ -1,0 +1,138 @@
+
+ - 6-node tris
+
+ - serial results don't match very well at first but then are exact 
+
+   + Pressure is off, ts=2 is off a lot 
+
+     - ts=1   
+       Values 1: min -30.6979  max 33.8119
+       Values 2: min -30.6207  max 33.8119
+       Max diff: 4.33282
+
+     - ts=2   
+       Values 1: min -25.0326  max 25.7161
+       Values 2: min -19.6791  max 25.7161
+       Max diff: 10.9992
+
+     - ts=3   
+       Values 1: min -17.7656  max 26.624
+       Values 2: min -17.8304  max 26.624
+       Max diff: 5.09708
+
+     - ts=10   
+       Values 1: min -12.7141  max 13.1981
+       Values 2: min -12.7504  max 13.1981
+       Max diff: 0.544653
+
+     - ts=100
+       Values 1: min -12.6806  max 12.6475
+       Values 2: min -12.6806  max 12.6475
+       All data match.
+
+
+ - mpi results don't match very well at first but then are exact 
+
+   + Pressure is off a bit
+
+     ts=10 Values 1: min -12.9439  max 12.7217
+           Values 2: min -12.9577  max 12.7217
+           Max diff: 0.880175
+
+     ts=100 Values 1: min -12.6806  max 12.6475
+            Values 2: min -12.6806  max 12.6475
+            All data match.
+
+
+
+=============================================== serial ========================================
+
+----------------------------------------------- ts=1 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -30.6979  max 33.8119
+  Values 2: min -30.6207  max 33.8119
+  **** Data does not match for 4225 entries. Max diff: 4.33282
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+
+----------------------------------------------- ts=2 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -25.0326  max 25.7161
+  Values 2: min -19.6791  max 25.7161
+  **** Data does not match for 4225 entries. Max diff: 10.9992
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+
+----------------------------------------------- ts=3 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -17.7656  max 26.624
+  Values 2: min -17.8304  max 26.624
+  **** Data does not match for 4225 entries. Max diff: 5.09708
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+
+----------------------------------------------- ts=10 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -12.7141  max 13.1981
+  Values 2: min -12.7504  max 13.1981
+  **** Data does not match for 4225 entries. Max diff: 0.544653
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+=============================================== mpi ========================================
+----------------------------------------------- ts=10 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -12.9439  max 12.7217
+  Values 2: min -12.9577  max 12.7217
+  **** Data does not match for 4225 entries. Max diff: 0.880175
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+----------------------------------------------- ts=100 ----------------------------------------
+Data name: Velocity   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-11
+
+Data name: Pressure   Type: 11
+  Values 1: min -12.6806  max 12.6475
+  Values 2: min -12.6806  max 12.6475
+  All data match.
+
+Data name: Traction   Type: 11
+  num_comp: 2
+  **** Data does not match for 4225 entries. Max diff: 1e-1
+
+

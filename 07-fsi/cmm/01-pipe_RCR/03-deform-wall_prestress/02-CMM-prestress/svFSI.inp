@@ -1,10 +1,9 @@
 #----------------------------------------------------------------
 # General simulation parameters
 
-#Continue previous simulation: 1
-Continue previous simulation: 0
+Continue previous simulation: 1
 Number of spatial dimensions: 3
-Number of time steps: 800
+Number of time steps: 10
 Time step size: 0.005
 Spectral radius of infinite time step: 0.50
 Searched file name to trigger stop: STOP_SIM

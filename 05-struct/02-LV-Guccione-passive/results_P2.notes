@@ -1,0 +1,54 @@
+
+ - results are off a bit, maybe because of large number of iterations in bicgsv
+
+
+========================================= serial =========================================
+Read mesh 1-procs//result_001_cpp.vtu
+Read mesh 1-procs//result_001.vtu
+Tolerance: 1e-11
+
+========== Compare Coordinates ==========
+Mesh 1: Number of nodes: 60336
+Mesh 2: Number of nodes: 60336
+All coordinates match.
+
+========== Compare Nodal Data ==========
+No data name GlobalNodeID for mesh 2.
+
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.163597
+  Values 2: min 0  max 0.161172
+  **** Data does not match for 59388 entries. Max diff: 0.00248208
+
+Data name: Jacobian   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 0.991311  max 1.01332
+  Values 2: min 0.991303  max 1.01332
+  **** Data does not match for 60336 entries. Max diff: 0.000161906
+
+Data name: Velocity   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 30.6744
+  Values 2: min 0  max 30.2198
+  **** Data does not match for 59388 entries. Max diff: 0.465389
+
+
+========================================= mpi =========================================
+Read mesh 4-procs//result_010_cpp.vtu
+Read mesh 4-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 1.49148
+  Values 2: min 0  max 1.49235
+  **** Data does not match for 59388 entries. Max diff: 0.00126044
+
+Data name: Velocity   Type: 11
+  Values 1: min 0  max 19.9816
+  Values 2: min 0  max 19.9125
+  **** Data does not match for 59388 entries. Max diff: 0.625616
+
