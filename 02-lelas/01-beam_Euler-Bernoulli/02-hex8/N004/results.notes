@@ -1,0 +1,37 @@
+
+ - 128 elements
+
+ - serial results are good
+
+ - no mpi results, mesh is too small
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0621149
+  Values 2: min 0  max 0.0621096
+  **** Data does not match for 200 entries. Max diff: 5.30238e-06
+
+Data name: VonMises_stress   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 1.43368e+07  max 2.61074e+08
+  Values 2: min 1.43364e+07  max 2.61074e+08
+  **** Data does not match for 225 entries. Max diff: 25508.4
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.998838  max 1.00117
+  Values 2: min 0.998838  max 1.00117
+  **** Data does not match for 225 entries. Max diff: 1.14085e-07
+
+
+===================================================== mpi ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+
+

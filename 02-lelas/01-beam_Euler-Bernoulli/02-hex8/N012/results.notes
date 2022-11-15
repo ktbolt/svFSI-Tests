@@ -1,0 +1,71 @@
+
+ - number of elements 3456
+
+ - serial results are good
+   LE 1-1  4.000e+00  [0 1.000e+00 1.000e+00 9.943e-04]  [218 -5 100]
+   LE 1-2s 8.000e+00  [-60 9.943e-04 9.943e-04 9.918e-04]  [210 0 100]
+   LE 2-1  1.300e+01  [0 1.000e+00 1.300e+00 9.944e-04]  [218 -5 83]
+   LE 2-2s 1.700e+01  [-60 9.944e-04 1.293e-03 9.918e-04]  [210 0 99]
+
+
+ - mpi results are good
+
+   + 2 procs has longer iterations?
+
+   LE 1-1  6.000e+00  [0 1.000e+00 1.000e+00 9.891e-04]  [601 -1 96]
+   LE 1-2s 9.000e+00  [-60 9.891e-04 9.891e-04 9.875e-04]  [300 -11 97]
+   LE 2-1  1.500e+01  [0 1.000e+00 1.300e+00 9.837e-04]  [601 -1 93]
+   LE 2-2s 1.700e+01  [-60 9.837e-04 1.279e-03 9.874e-04]  [202 -23 95]
+
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0944691
+  Values 2: min 0  max 0.0944691
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 1.33954e+07  max 4.27615e+08
+  Values 2: min 1.33954e+07  max 4.27615e+08
+  **** Data does not match for 4191 entries. Max diff: 4.03821e-05
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.997859  max 1.00214
+  Values 2: min 0.997859  max 1.00214
+  All data match.
+
+
+===================================================== mpi ==================================
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+
+-------------------------------------------------- ts=10 --------------------------------------
+Data name: Displacement   Type: 11
+  num_comp: 3
+  Vector double nodal data
+  Values 1: min 0  max 0.0944691
+  Values 2: min 0  max 0.0944691
+  **** Data does not match for 3864 entries. Max diff: 1.07407e-09
+
+Data name: VonMises_stress   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 1.33954e+07  max 4.27615e+08
+  Values 2: min 1.33954e+07  max 4.27615e+08
+  **** Data does not match for 4225 entries. Max diff: 5.48065
+
+Data name: Jacobian   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min 0.997859  max 1.00214
+  Values 2: min 0.997859  max 1.00214
+  **** Data does not match for 2708 entries. Max diff: 2.59446e-11
+
+
+

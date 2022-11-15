@@ -1,0 +1,50 @@
+
+ - serial results are good
+
+ - mpi results are good
+
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0958866
+  Values 2: min 0  max 0.0958866
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 6.80726e+06  max 4.82566e+08
+  Values 2: min 6.80726e+06  max 4.82566e+08
+  **** Data does not match for 26476 entries. Max diff: 0.00276077
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.997051  max 1.00266
+  Values 2: min 0.997051  max 1.00266
+  All data match.
+
+
+===================================================== mpi ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 4-procs//result_010_cpp.vtu
+Read mesh 4-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0958866
+  Values 2: min 0  max 0.0958866
+  **** Data does not match for 13834 entries. Max diff: 6.96603e-11
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 6.80726e+06  max 4.82566e+08
+  Values 2: min 6.80726e+06  max 4.82566e+08
+  **** Data does not match for 26476 entries. Max diff: 0.801696
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.997051  max 1.00266
+  Values 2: min 0.997051  max 1.00266
+  All data match.

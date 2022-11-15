@@ -168,3 +168,121 @@
  LE    98-1  2.20E2  [   0 1.00000 4.05E-8 8.80E-4]  [  98  -10  95]
  LE    99-1  2.20E2  [   0 1.00000 4.08E-8 9.48E-4]  [  99   -5  95]
  LE   100-1s 2.21E2  [   0 1.00000 4.00E-8 9.98E-4]  [  42  -69  89]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 11-13-2022
+
+ Running in parallel with 4 tasks
+[READFILES] Number of processors: 4
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 10
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/02-hex8/N012/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/back.vtp>
+ Number of nodes: 4225
+ Number of elements: 3456
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: Trilinos-ILUT
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ ParMETIS partitioned the mesh by cutting 809 elements
+ Total number of non-zeros in the LHS matrix: 107548
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 11-13-2022
+
+ Running in parallel with 4 tasks
+[READFILES] Number of processors: 4
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 10
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/02-hex8/N012/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+ Make sure corner nodes in elements are arranged 1-4 on
+      one face and 5-8 on the opposite face
+      https://vtk.org/wp-content/uploads/2015/04/file-formats.pdf
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/02-hex8/N012/mesh-surfaces/back.vtp>
+ Number of nodes: 4225
+ Number of elements: 3456
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: Trilinos-ILUT
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ ParMETIS partitioned the mesh by cutting 809 elements
+ Total number of non-zeros in the LHS matrix: 107548
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ LE     1-1  3.41E1  [   0 1.00000 1.00000 7.51E-1]  [5100    0 100]
+ LE     1-2  6.88E1  [  -2 7.51E-1 7.51E-1 9.99E-1]  [5100    0 100]

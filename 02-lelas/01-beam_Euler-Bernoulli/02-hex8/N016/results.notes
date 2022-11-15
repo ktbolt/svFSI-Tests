@@ -1,0 +1,61 @@
+
+ - 8192 elements
+
+ - serial results are good
+   LE 1-1  4.500e+01  [0 1.000e+00 1.000e+00 9.972e-04]  [456 -6 97]
+   LE 1-2  1.080e+02  [-60 9.972e-04 9.972e-04 9.977e-04]  [583 -2 99]
+   LE 2-1  1.610e+02  [0 1.000e+00 1.300e+00 9.970e-04]  [473 0 97]
+   LE 2-2  2.210e+02  [-60 9.970e-04 1.296e-03 9.746e-04]  [590 -3 99]
+
+
+ - mpi results are good
+   LE 1-1  2.000e+01  [0 1.000e+00 1.000e+00 8.758e-04]  [378 -17 96]
+   LE 1-2  3.700e+01  [-61 8.758e-04 8.758e-04 9.782e-04]  [285 -2 97]
+   LE 2-1  6.000e+01  [0 1.000e+00 1.300e+00 9.972e-04]  [389 -20 96]
+   LE 2-2  8.600e+01  [-60 9.972e-04 1.296e-03 9.793e-04]  [457 -9 97]
+
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 1-procs//result_010_cpp.vtu
+Read mesh 1-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0973685
+  Values 2: min 0  max 0.0973685
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 1.1065e+07  max 4.53917e+08
+  Values 2: min 1.1065e+07  max 4.53917e+08
+  **** Data does not match for 9537 entries. Max diff: 0.000616133
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.99771  max 1.00229
+  Values 2: min 0.99771  max 1.00229
+  All data match.
+
+
+===================================================== mpi ==================================
+
+-------------------------------------------------- ts=10 --------------------------------------
+Read mesh 2-procs//result_010_cpp.vtu
+Read mesh 2-procs//result_010.vtu
+Tolerance: 1e-11
+
+Data name: Displacement   Type: 11
+  Values 1: min 0  max 0.0973685
+  Values 2: min 0  max 0.0973685
+  All data match.
+
+Data name: VonMises_stress   Type: 11
+  Values 1: min 1.1065e+07  max 4.53917e+08
+  Values 2: min 1.1065e+07  max 4.53917e+08
+  **** Data does not match for 9536 entries. Max diff: 0.000393331
+
+Data name: Jacobian   Type: 11
+  Values 1: min 0.99771  max 1.00229
+  Values 2: min 0.99771  max 1.00229
+  All data match.

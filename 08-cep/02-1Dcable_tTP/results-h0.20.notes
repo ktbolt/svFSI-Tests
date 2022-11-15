@@ -1,0 +1,56 @@
+
+ - serial results are good
+
+ - mpi results are good
+
+
+===================================================== serial ==================================
+
+-------------------------------------------------- ts=1 --------------------------------------
+Read mesh 1-procs//result_001_cpp.vtu
+Read mesh 1-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Action_potential   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min -85.2301  max -80.0677
+  Values 2: min -85.2301  max -80.0677
+  All data match.
+
+-------------------------------------------------- ts=100 --------------------------------------
+Read mesh 1-procs//result_100_cpp.vtu
+Read mesh 1-procs//result_100.vtu
+Tolerance: 1e-11
+
+Data name: Action_potential   Type: 11
+  Values 1: min -85.2474  max 24.1335
+  Values 2: min -85.2474  max 24.1335
+  All data match.
+
+===================================================== mpi ==================================
+
+-------------------------------------------------- ts=1 --------------------------------------
+Read mesh 2-procs//result_001_cpp.vtu
+Read mesh 2-procs//result_001.vtu
+Tolerance: 1e-11
+
+Data name: Action_potential   Type: 11
+  num_comp: 1
+  Scalar double nodal data
+  Values 1: min -85.2301  max -80.0677
+  Values 2: min -85.2301  max -80.0677
+  All data match.
+
+-------------------------------------------------- ts=100 --------------------------------------
+Read mesh 2-procs//result_100_cpp.vtu
+Read mesh 2-procs//result_100.vtu
+Tolerance: 1e-11
+
+Data name: Action_potential   Type: 11
+  Values 1: min -85.2474  max 24.1335
+  Values 2: min -85.2474  max 24.1335
+  All data match.
+
+
+

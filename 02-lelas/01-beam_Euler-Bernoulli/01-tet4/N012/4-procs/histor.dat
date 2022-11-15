@@ -166,3 +166,78 @@
  LE    98-1  1.71E1  [   0 1.00000 2.45E-8 9.03E-4]  [  11  -70  78]
  LE    99-1  1.71E1  [   0 1.00000 2.52E-8 9.60E-4]  [  12  -69  79]
  LE   100-1s 1.72E1  [   0 1.00000 2.62E-8 9.18E-4]  [   9  -70  71]
+
+ ----------------------------------------------
+
+    SimVascular Fluid-Structure Interaction
+                   (svFSI)
+
+ ----------------------------------------------
+
+ This program comes with ABSOLUTELY NO WARRANTY
+ Compiled on 11-12-2022
+
+ Running in parallel with 4 tasks
+[READFILES] Number of processors: 4
+[READFILES] Number of spatial dimensions (nsd): 3
+[READFILES] Check IEN order (ichckIEN): T
+[READFILES] Number of time steps (nTs): 10
+[READMSH] Reading mesh: msh
+[READSV]
+[READSV] ========== READSV ==========
+[READSV] ftmp%fname: ../../mesh/01-tet4/N012/mesh-complete.mesh.vtu
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-complete.mesh.vtu>
+[READSV] lm % eType: 100
+ Number of available faces: 6
+[READSV]
+[READSV] Add faces ...
+[READSV] ---------- iFa 1 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/left.vtp>
+[READSV] ---------- iFa 2 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/right.vtp>
+[READSV] ---------- iFa 3 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/bottom.vtp>
+[READSV] ---------- iFa 4 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/top.vtp>
+[READSV] ---------- iFa 5 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/front.vtp>
+[READSV] ---------- iFa 6 ----------
+ <VTK XML Parser> Loading file <../../mesh/01-tet4/N012/mesh-surfaces/back.vtp>
+ Number of nodes: 2337
+ Number of elements: 9670
+ Mesh data imported successfully
+ Domain size X: 0.000000 5.000000
+ Domain size Y: 0.000000 2.500000
+ Domain size Z: 0.000000 5.000E-1
+ Number of equations: 1
+ Using linear solver: GMRES
+ Using preconditioner: Trilinos-ILUT
+ Number of imposed BC for equation <lElas>: 2
+ Configuration is completed successfully
+ ParMETIS partitioned the mesh by cutting 360 elements
+ Total number of non-zeros in the LHS matrix: 30732
+ Eq. <LE>
+
+---------------------------------------------------------------------
+ Eq     N-i     T       dB  Ri/R1   Ri/R0    R/Ri     lsIt   dB  %t
+---------------------------------------------------------------------
+ LE     1-1  3.2E-1  [   0 1.00000 1.00000 9.12E-4]  [ 251  -12  93]
+ LE     1-2s 5.8E-1  [ -60 9.12E-4 9.12E-4 9.88E-4]  [ 167   -5  93]
+ LE     2-1  1.0090  [   0 1.00000 1.30000 9.12E-4]  [ 251  -12  73]
+ LE     2-2s 1.2580  [ -60 9.12E-4 1.18E-3 9.88E-4]  [ 167   -5  92]
+ LE     3-1  1.7320  [   0 1.00000 1.20000 9.12E-4]  [ 251  -12  77]
+ LE     3-2s 1.9860  [ -60 9.12E-4 1.09E-3 9.88E-4]  [ 167   -5  93]
+ LE     4-1  2.4210  [   0 1.00000 9.50E-1 9.12E-4]  [ 251  -12  74]
+ LE     4-2s 2.6760  [ -60 9.12E-4 8.66E-4 9.87E-4]  [ 167   -5  90]
+ LE     5-1  3.0920  [   0 1.00000 6.87E-1 9.12E-4]  [ 251  -12  74]
+ LE     5-2s 3.3360  [ -60 9.12E-4 6.27E-4 9.87E-4]  [ 167   -5  92]
+ LE     6-1  3.7590  [   0 1.00000 4.68E-1 9.12E-4]  [ 251  -12  72]
+ LE     6-2s 4.0050  [ -60 9.12E-4 4.27E-4 9.86E-4]  [ 167   -5  92]
+ LE     7-1  4.4429  [   0 1.00000 3.06E-1 9.11E-4]  [ 251  -12  75]
+ LE     7-2s 4.7110  [ -60 9.11E-4 2.79E-4 9.85E-4]  [ 167   -5  92]
+ LE     8-1  5.1530  [   0 1.00000 1.93E-1 9.11E-4]  [ 251  -12  75]
+ LE     8-2s 5.4250  [ -60 9.11E-4 1.76E-4 9.84E-4]  [ 167   -5  92]
+ LE     9-1  5.8910  [   0 1.00000 1.19E-1 9.11E-4]  [ 251  -12  68]
+ LE     9-2s 6.1500  [ -60 9.11E-4 1.09E-4 9.83E-4]  [ 167   -5  92]
+ LE    10-1  6.5700  [   0 1.00000 7.22E-2 9.11E-4]  [ 251  -12  73]
+ LE    10-2s 6.8320  [ -60 9.11E-4 6.58E-5 9.82E-4]  [ 167   -5  91]

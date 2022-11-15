@@ -7,11 +7,11 @@ dir2="${p}-procs/"
 
 step="002"
 step="020"
-step="010"
 step="90"
-step="100"
 step="003"
 step="001"
+step="010"
+step="100"
 
 /Users/parkerda/bin/vtk-compare.py  ${dir1}/result_${step}_cpp.vtu  ${dir2}/result_${step}.vtu
 
